@@ -149,7 +149,7 @@ int main(){
 ## Problem A-化学 (编译器选 GNU G++)  
 ####  题目  
 化学很神奇，以下是烷烃基。
-![](https://img-blog.csdnimg.cn/20200302095223499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzMzE1Mw==,size_16,color_FFFFFF,t_70)
+![](https://github.com/HsuPengbo/HsuPengbo.github.io/blob/master/alkanyl000212.png)
 假设如上图，这个烷烃基有6个原子和5个化学键，6个原子分别标号1~6，然后用一对数字 a,b 表示原子a和原子b间有一个化学键。这样通过5行a,b可以描述一个烷烃基
 
 你的任务是甄别烷烃基的类别。
