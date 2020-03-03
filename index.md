@@ -6,4 +6,5 @@
   <tr> <td> major </td> <td> Artificial Intelligence</td></tr>
   </table>
 + blog
+  + [第二周程序设计思维与实践习题](./week2.md)
 
