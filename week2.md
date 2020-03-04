@@ -115,8 +115,11 @@ pour A B
 success
 ```
 ####  思路
-A,B为质数,想要通过A,B的变化得到一个数C。 由于必然存在A*i-B*j = C,所以我们可以想办法让A杯子每次都倒满然后往B中倒,B杯子如果满了就倒空,然后把A中还有的也倒进去。 此时B杯子作为一个容器,每次进入A的正数倍,清出B的整数倍。又有C<B,B中不断循环下去总会出现恰好有C单位水的状态。
-####  代码
++ [数学法]A,B为质数,想要通过A,B的变化得到一个数C。 由于必然存在A*i-B*j = C,所以我们可以想办法让A杯子每次都倒满然后往B中倒,B杯子如果满了就倒空,然后把A中还有的也倒进去。 此时B杯子作为一个容器,每次进入A的正数倍,清出B的整数倍。又有C<B,B中不断循环下去总会出现恰好有C单位水的状态。
++ [BFS法]有A杯空，B杯空，A杯满，B杯满，A倒入B，B倒入A六种操作(看做一个迷宫中运动的六种方向。用BFS解决。
+然后初始a=0,b=0。设一个矩阵M=[N*N],( Mij=M[i*N+j] )，初始都置0。然后从M 00开始入队，然后开始循环，取出队首， 如果满足边界条件 && Mij没有访问过 就入队 ，最终等到栈顶Mij满足i=C或者j=C时结束。另外之前每一步都保存父节点。
+这一种可以求出最快速的操作方法 。
++  数学法
 ```cpp
 #include<iostream>
 using namespace std;
@@ -141,6 +144,67 @@ void PourWater(int A,int B,int C){
 int main(){
 	while(cin>>A>>B>>C){
 		PourWater(A,B,C);
+	}
+	return 0;
+}
+```
++  BFS法
+```cpp
+#include<iostream>
+#include<cstring>
+#include<queue>
+#include<stack>
+using namespace std;
+const char str[7][10]={"fill A","fill B","empty A","empty B","pour A B","pour B A","success"};
+const int N=1000;
+int M[N*N];
+int F[N*N];
+struct water{
+	int x,y;
+};  
+queue<water> Q;
+stack<water> S;
+stack<int> S1;
+void VisitBFS(int A,int B,int C){
+	memset(M,0,sizeof(M)); Q= queue<water>(); S= stack<water>();S1=stack<int>();
+    int a=0,b=0,t1,t2; water W,newW;  W.x=0;W.y=0;int ss=0;
+    Q.push(W);  M[0]=8;            //M[i][j]=M[i*N+j]
+    while(Q.size()){
+    	W=Q.front();a=W.x;b=W.y;t1=a+b-A;t2=a+b-B;
+    	if(a==C ||b==C) break; 
+		Q.pop(); 
+        if(a<A && M[A*N+b]==0){  newW.x=A;newW.y=b; Q.push(newW); M[A*N+b]=1; F[A*N+b]=a*N+b; }    //a,b->A,b
+	    if(b<B && M[a*N+B]==0){  newW.x=a;newW.y=B; Q.push(newW); M[a*N+B]=2; F[a*N+B]=a*N+b;  }    //a,b->a,B
+	    if(a>0 && M[b]==0)    {  newW.x=0;newW.y=b; Q.push(newW); M[b]=3; F[b]=a*N+b;  }            //a,b->0,b
+	    if(b>0 && M[a*N]==0)  {  newW.x=a;newW.y=0; Q.push(newW); M[a*N]=4; F[a*N]=a*N+b;  }        //a,b->a,0
+	    if(b>0 && M[(a+b)*N]==0 && t1<0){
+	    		newW.x=a+b;newW.y=0; Q.push(newW); M[(a+b)*N]=6; F[(a+b)*N]=a*N+b;    //a,b->a+b,0
+			}
+		if(b>0 && M[A*N+t1]==0 && t1>0){
+				newW.x=A;newW.y=t1; Q.push(newW); M[A*N+t1]=6; F[A*N+t1]=a*N+b;   //a,b->A,t1
+			}
+		if(a>0 && M[a+b]==0 && t2<0){
+				newW.x=0;newW.y=a+b; Q.push(newW); M[a+b]=5; F[a+b]=a*N+b;      //a,b->0,a+b
+			}
+		if(a>0 && M[t2*N+B]==0 && t2>0){
+				newW.x=t2;newW.y=B; Q.push(newW); M[t2*N+B]=5; F[t2*N+B]=a*N+b;    //a,b->t2,B
+			}  
+	} 
+	ss=M[a*N+b];S1.push(ss);
+	while(!(a==0 &&b==0)){
+		ss=F[a*N+b];a=ss/N; b=ss%N;W.x=a;W.y=b;
+		ss=M[a*N+b]; if(ss<8) S1.push(ss);
+	} 
+	while(S1.size()){
+		ss=S1.top();S1.pop();
+		cout<<str[ss-1]<<endl;
+	}
+	cout<<str[6]<<endl;
+}
+int main(){
+	int A,B,C;
+	while(cin>>A>>B>>C){
+	  VisitBFS(A,B,C);
 	}
 	return 0;
 }
