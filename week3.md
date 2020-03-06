@@ -1,3 +1,4 @@
+# 程序设计思维与实践 习题 第三周          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)
 ## Problem A - 选数问题
 ####   Description
 Given n positive numbers, ZJM can select exactly K of them that sums to S. Now ZJM wonders how many ways to get it!
@@ -221,3 +222,4 @@ int main(){
 	return 0;
 } 
 ```
+# 结束！ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)
