@@ -24,7 +24,10 @@ Remember that k<=n<=16 and all numbers can be stored in 32-bit integer
 ####  Idea
  [DFS] 先定义一个变量t=0。对所有的数遍历，选是一种情况，不选是一种情况，然后分别向下一层搜索。满足条件的话，返回t++。如果选的数超过限度或者和大于输入值停止。最后所有的成功情况都会对t+1，得到的t值就是答案。
 ####  Codes
-
+|  |  |  |  |  |
+|--|--|--|--|--|
+| Time  | Memory | Length | Lang            | Submitted           |
+| 265ms | 140kB  | 588    | GNU G++17 7.3.0 | 2020-03-05 14:30:27 |
 ```cpp
 #include<iostream>
 #include <list>
@@ -94,7 +97,10 @@ int main(){
 ####  Idea
 贪心策略： 按照<右端小的在前，右端一样的左端小的在前>规则，对输入的所有区间进行排序。然后从头遍历每个区间。初始sum=0，定义一个临时变量cnt作为循环中的右端点(初始为第一个区间右端点)，每次观察下一个区间左端点是否与当前 cnt相交，不相交的话就sum+1(说明需要取新的点)，并更新cnt为其右端点 (相交的话用当前的右端点就够了)。
 ####  Codes
-
+|  |  |  |  |  |
+|--|--|--|--|--|
+| Time | Memory | Length |  Lang          | Submitted             |
+| 15ms | 8kB    | 814    | GNU G++17 7.3.0| 2020-03-05 15:06:32   |  
 ```cpp
 #include<iostream>
 #include <list>
@@ -168,7 +174,10 @@ int main(){
 ####  Idea
 贪心策略：先按左端点大小升序，再按右端点升序。这样即便有被包括的区间，小也会被放在前面，不影响更新--->把1作为初始Start(左端点)和End(右端点)，每次从当前区间向后遍历，遇到最后一个左端点<start右端点>End的，把End作为当前End,Start取下一个点(End+1)，Sum++，然后向后接着观察及更新。需要注意终止循环的边界条件。由于我用的for循环最后一步没法向后走了，所以需要在循环外加一句判断，如果End>T，就输出sum+1反之输出-1.
 ####  Codes
-    
+ |  |  |  |  |  |
+ |--|--|--|--|--|
+ | Time  | Memory | Length | Lang | Submitted           |
+ | 63ms  | 836kB  | 810    | G++  | 2020-03-06 14:10:30 |
 ```cpp
 #include<cstdio>
 #include<iostream>
