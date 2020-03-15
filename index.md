@@ -8,4 +8,5 @@
 + blog
   + [Program design thinking and practice---week2](./week2.md)
   + [Program design thinking and practice---week3](./week3.md)
+  + [Program design thinking and practice---CSP-M1](./CSP-M1.md)
 
