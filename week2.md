@@ -1,4 +1,4 @@
-# 程序设计思维与实践 习题 第二周          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)
+#  第二周 习题         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)
 ## Problem A- Maze
 ####  题目    
 东东有一张地图，想通过地图找到妹纸。地图显示，0表示可以走，1表示不可以走，左上角是入口，右下角是妹纸，这两个位置保证为0。既然已经知道了地图，那么东东找到妹纸就不难了，请你编一个程序，写出东东找到妹纸的最短路线。
@@ -574,5 +574,4 @@ int main(){
 	return 0;
 }
 ```
-### 结束！
-&nbsp;&nbsp;&nbsp; [返回首页](./index.md)
+### 结束！ &nbsp;&nbsp;&nbsp;  [返回首页](./index.md)&nbsp;&nbsp;   [下篇 week3](./week3.md)
