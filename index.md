@@ -4,6 +4,7 @@
   <tr> <td> sex   </td> <td> male      </td>   </tr>                 
   <tr> <td> city  </td> <td> Tsingtao  </td>   </tr>         
   <tr> <td> major </td> <td> Artificial Intelligence</td></tr>
+  <tr> <td> College</td><td>Shandong University </td></tr>
   </table>
 + blog 
   + Program design thinking and practice
