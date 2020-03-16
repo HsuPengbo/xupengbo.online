@@ -10,5 +10,5 @@
     + [week2](./week2.md)
     + [week3](./week3.md)
     + [CSP-M1](./CSP-M1.md)
-    + [CSP-M1](./week4.md)
+    + [week4](./week4.md)
 
