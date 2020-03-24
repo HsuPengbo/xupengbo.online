@@ -201,10 +201,7 @@ $1<=n<=10^5$ , n是4的倍数. 字符串中仅包含字符``'Q', 'W', 'E' `` 和
 我们需要寻找替换某个区间后，满足题目要求的条件的区间的集合中最小的那个，求解的答案区间是连续的，区间移动的时候长度会有所变化，该题就可以用尺取法。当替换区间满足要求就L++(因为在包含L元素的区间中没有比他更短的)，不满足就R++。
 下面将需要满足的要转化为判断式。观察下图，需要保证区间大小>=差值部分之和，如果比它大，需要保证为4的倍数，这样才可以保证改变区间内的字符后满足要求。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200324140146703.bmp?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzMzE1Mw==,size_4,color_FFFFFF,t_70)
-设区间 [L,R] 外的四种字母的数量分别为$sum_i$,$\Delta=  \sum_{i=0}^{4} max-(sum_i)$则有：
-$check([L,R]) ==true   
-\Leftrightarrow length([L, R])==(sum1-sum2)+(sum1-sum3)+(sum1-sum4)  + 4·k , k>=0    
-\Leftrightarrow  {(length([L,R])-\Delta)\%4==0} \cap {(length([L,R])-\Delta)>=0}$
+![](https://img-blog.csdnimg.cn/20200324170152242.PNG)
 ###  Codes
 ```cpp
 #include<iostream> 
