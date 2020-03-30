@@ -1,4 +1,4 @@
-# 程序设计思维与实践 第6周
+# 程序设计思维与实践 第六周  &nbsp;&nbsp;&nbsp;    [返回首页](./index.md)&nbsp;&nbsp;  [上篇 Week6模拟](./week6模拟.md)
 <!-- wp:heading -->
 <h2>Problem A- - 氪金带东 </h2>
 <!-- /wp:heading -->
@@ -514,3 +514,4 @@ int main(){
 	return 0;
 }</code></pre>
 <!-- /wp:code -->
+# 结束！    &nbsp;&nbsp;&nbsp;    [返回首页](./index.md)&nbsp;&nbsp;  [下篇待定]
