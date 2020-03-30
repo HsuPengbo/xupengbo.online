@@ -1,4 +1,4 @@
-# Week6-限时大模拟
+# 程序设计思维与实践 第六周 限时大模拟           &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 Week5](./week5.md)
 <!-- wp:heading {"level":3} -->
 <h3>Description</h3>
 <!-- /wp:heading -->
@@ -184,3 +184,4 @@ int main(){
 	return 0;
 }</code></pre>
 <!-- /wp:code -->
+# 结束！    &nbsp;&nbsp;&nbsp;    [返回首页](./index.md)&nbsp;&nbsp;  [下篇 week6作业](./week6.md)
