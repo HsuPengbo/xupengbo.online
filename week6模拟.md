@@ -93,8 +93,8 @@
 <p>其中不同情况的判断和处理如下:(考虑的都是从已知的A,B,a1,a2,b1,b2判断后可以出现该种情况的条件下)</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":44} -->
-<figure class="wp-block-image"><img src="https://www.xupengbo.cn/wp-content/uploads/2020/03/image-5-1024x586.png" alt="" class="wp-image-44"/></figure>
+<!-- wp:image {"id":114} -->
+<figure class="wp-block-image"><img src="https://www.xupengbo.cn/wp-content/uploads/2020/03/image-10-1024x375.png" alt="" class="wp-image-114"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
