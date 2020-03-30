@@ -14,3 +14,5 @@
     + [week4](./week4.md)
     + [CSP-201512-3](./CSP-201512-3.md)
     + [week5](./week5.md)
+    + [week6限时大模拟](./week6模拟.md)
+    + [week6](./week6.md)
