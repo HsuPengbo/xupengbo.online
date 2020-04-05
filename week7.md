@@ -1,4 +1,4 @@
-# 程序设计思维与实践 第七周        &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 Week6限时大模拟](./week6限时模拟.md)
+# 程序设计思维与实践 第七周        &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 Week6](./week6.md)
 <!-- wp:heading -->
 <h2>  Problem  A - TT 的魔法猫 </h2>
 <!-- /wp:heading -->
