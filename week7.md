@@ -65,7 +65,8 @@ TT 不相信他的小猫咪什么比赛都能预测，因此他想知道有多�
 
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">这道题是求取任意两点之间的胜负关系，属于传递闭包问题。
-如果两点之间没法判断胜负关系说明不在一个闭包关系里，可以使用Floyd算法实现。当dis[a][b]=1、0分别说明强关系、关系未知。
+如果两点之间没法判断胜负关系说明不在一个闭包关系里，可以使用Floyd算法实现。
+当dis[a][b]=1、0分别说明强关系、关系未知。
 最后遍历所有的点，dis[a][b]、dis[b][a]都为0时说明没法判断，++ans。</pre>
 <!-- /wp:preformatted -->
 
@@ -211,11 +212,12 @@ int main(){
 <!-- /wp:preformatted -->
 
 <!-- wp:preformatted -->
-<pre class="wp-block-preformatted">由于我们还需要保存路径,所以需要建立数组path,每次在更新dis[y]时,也加上path[y]=x;保存y的上一个点x。（但是递归输出的顺序刚好相反。）
+<pre class="wp-block-preformatted">由于我们还需要保存路径,所以需要建立数组path,每次在更新dis[y]时,也加上path[y]=x;保存y的上一个点x。
+（但是递归输出的顺序刚好相反。）
 将S作为源点求出各点到其最短路径,得到dis1[]、path1[]。
 将E作为源点求出各点到其最短路径,得到dis2[]、path2[]。
 遍历所有商业线，设定u=0,v=0;
-每次将走商业线(X,Y,Z)的dis1[X]+dis2[Y]+W \ dis1[Y]+dis2[X]+Z \ 和不走的dis2[S](S到E的路径)三者进行比较，
+每次将走商业线(X,Y,Z)的dis1[X]+dis2[Y]+W、dis1[Y]+dis2[X]+Z和不走的dis2[S](S到E的路径)三者进行比较，
     如果走了商业线的话记得更新u,v然后分情况输出。
     如果u=0说明没有走商业线，输出时使用path2[S]，将从起点S到终点E的路径顺序输出。
 反之走了商业线，用path1[]输出从起点S到点u,用path2[]输出点v到终点E。
