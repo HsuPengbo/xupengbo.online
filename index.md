@@ -18,4 +18,5 @@
     + [week6](./week6.md)
     + [week7](./week7.md)
     + [CSP-201604-3](./csp201604-3.md)
+    + [CSP-M2](./CSP-M2.md)
     
