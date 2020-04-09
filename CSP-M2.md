@@ -1,4 +1,4 @@
-# 程序设计思维与实践 CSP-M2
+# 程序设计思维与实践 CSP-M2       &nbsp;    [返回首页](./index.md)&nbsp;  [上篇CSP-201604-4](./CSP01604-3.md)
 ## Problem  A- HRZ的序列  
 <!-- /wp:heading -->
 
