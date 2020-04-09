@@ -75,12 +75,9 @@ NO</code></pre>
 <!-- wp:heading {"level":3} -->
 ### Idea 
 <!-- /wp:heading -->
-
-<!-- wp:preformatted -->
-<pre class="wp-block-preformatted">  序列中一些数加上k ，一些减去k ，一些不变，最后序列中所有的数相等。也就是说这个序列最多存在三个离散的数值(a,b,c)。
+   序列中一些数加上k ，一些减去k ，一些不变，最后序列中所有的数相等。也就是说这个序列最多存在三个离散的数值(a,b,c)。
   设a,b,c,d和a,b,c,d的bool标记.然后输入序列，先给a赋值,当存在序列值!=a且b的bool=false时,给b赋值，c,d同理。 
-  最后只需要判断a,b,c,d的存在即可。d存在就NO,c存在时, a、b、c之间不存在一个数是另外两数的平均值时,也NO。其余情况都是YES。</pre>
-<!-- /wp:preformatted -->
+  最后只需要判断a,b,c,d的存在即可。d存在就NO,c存在时, a、b、c之间不存在一个数是另外两数的平均值时,也NO。其余情况都是YES。 
 
 <!-- wp:heading {"level":3} -->
 ### Codes 
@@ -222,12 +219,10 @@ ABDCEFGHIJKLMNOPQRSTUVWXYZ</code></pre>
 <!-- wp:heading {"level":3} -->
 ### Idea 
 <!-- /wp:heading -->
-
-<!-- wp:preformatted -->
-<pre class="wp-block-preformatted">  分析需要找到第一个满足要求的字符串。那就让区间[i,i+25]从最左端移动，存在某个区块满足条件，才计算该区间的最小字典序值的字符串。
+ 
+分析需要找到第一个满足要求的字符串。那就让区间[i,i+25]从最左端移动，存在某个区块满足条件，才计算该区间的最小字典序值的字符串。
  判断函数只需要判断该区间存在某个字母数量多于1时就返回false,反之true，并保存字母存在的数量情况。
- 计算函数需要从区间头开始遍历，发现?就用数量=0的首个字母代替，最后得到答案。 </pre>
-<!-- /wp:preformatted -->
+ 计算函数需要从区间头开始遍历，发现?就用数量=0的首个字母代替，最后得到答案。  
 
 <!-- wp:heading {"level":3} -->
 ### Codes 
@@ -380,8 +375,8 @@ int main(){
 123456··············100101</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:preformatted -->
-<pre class="wp-block-preformatted">  发现从横线划开的区域各自成递增序列，第i区域每行比上一行多i个字符。那是不是可以先找到某个数n位于第i块，然后再进行更近一步的操作呢
+<!-- wp:preformatted --> 
+发现从横线划开的区域各自成递增序列，第i区域每行比上一行多i个字符。那是不是可以先找到某个数n位于第i块，然后再进行更近一步的操作呢
   观察发现每一区域都可以由两部分组成[矩形]+[三角形](i=1时矩形宽度=0)。
 虽然k的值可能非常大，但直接循环来确定区域i也可,10^18所在区域也就是十几。
    之后去解决字符在第p排的问题。由于字符所在的区域自身成等差数列,可以用二分法来找到它在第p排.这样就可以用k减去前面所有字符和，得到
@@ -393,8 +388,7 @@ int main(){
 stringstream(设stringstream ss;)这个东东可以把数字直接转化成字符序列。
 那只需要计算出k对应的数,然后把数给ss，只需要知道对应的在ss的序号即可。
 这个可以先计算出k前面有p个z位整数,然后计算k对应的数是n=10^(i-1)+p,算出k的对应数位len。
-把数传给ss,再把ss传给str，str[len-1]就是答案。</pre>
-<!-- /wp:preformatted -->
+把数传给ss,再把ss传给str，str[len-1]就是答案。  
 
 <!-- wp:image {"id":216} -->
 <figure class="wp-block-image"><img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/image-5-1024x568.png" alt="" class="wp-image-216"/></figure>
