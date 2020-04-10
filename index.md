@@ -13,7 +13,7 @@
   </tr>                 
   </table>
    
-   [My HomePage](https://www.xupengbo.cn)  &nbsp; &nbsp;  &nbsp;   [My alma mater](https://www.sdu.edu.cn) 
+   [My HomePage](https://www.xupengbo.cn)  &nbsp; &nbsp;  &nbsp;   [My alma mater](https://www.sdu.edu.cn/sdgk/sdjj.htm) 
 + blog    
    + Program design thinking and practice(CSP) 
    
