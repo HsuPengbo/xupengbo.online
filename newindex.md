@@ -1,10 +1,6 @@
 + Personal  profile
   <table>                 
-  <tr> <td> name  </td> <td> xupengbo  </td>  </tr>              
-  <tr> <td> sex   </td> <td> male      </td>   </tr>                 
-  <tr> <td> city  </td> <td> Tsingtao  </td>   </tr>         
-  <tr> <td> major </td> <td> Artificial Intelligence</td></tr>
-  <tr> <td> College</td><td>Shandong University </td></tr>
+  <tr> <td> name  </td> <td> sex   </td>  <td> city  </td> <td> College</td><td> major </td>  </tr>       <tr> <td> Xu Pengbo  </td> <td> male </td><td> Tsingtao  </td>  <td>Shandong University </td> <td> Artificial Intelligence</td>  </tr>                 
   </table>
 + blog 
   + Program design thinking and practice
