@@ -18,7 +18,7 @@
      <td><a  href="./week7.md">[week7]</a> </td>
      <td><a  href="./csp201604-3.md">[CSP-201604-3]</a> </td>
 </tr> 
-<tr> <td><a  href="./ "> </a> </td>  
+<tr> <td><a  href="./CSP-M2.md">[CSP-M2]</a> </td>  
      <td><a  href="./ "> </a> </td>   
      <td><a  href="./ "> </a> </td>  
      <td><a  href="./ "> </a> </td>
