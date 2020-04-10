@@ -1,17 +1,17 @@
-﻿**Blog of xupengbo**  
-## Personal  profile
+﻿ [**English**](./en-index.md)  
+### 简介
 
-  |  name |  city |College| major |
+  |  姓名 |  家乡 |学校| 专业 |
   |-------|-------|-------|-------|
-  | Xu Pengbo | Tsingtao | Shandong University | Artificial Intelligence|
+  | 徐鹏博 | 郑州 | 山东大学 | 人工智能|
 
-  [**My HomePage**](https://www.xupengbo.cn) &nbsp;&nbsp;&nbsp;  [**My alma mater**](https://www.sdu.edu.cn/sdgk/sdjj.htm) 
-## blog    
-   + Program design thinking and practice(CSP) 
+  [**我的网站**](https://www.xupengbo.online) &nbsp;&nbsp;&nbsp;  [**了解山大**](https://www.sdu.edu.cn/sdgk/sdjj.htm) 
+### 文章概览    
+   + 程序设计思维与实践 
    
-     | [week2](./week2.md) | [week3](./week3.md) | [CSP-M1](./CSP-M1.md) | [week4](./week4.md) |[CSP-201512-3](./CSP-201512-3.md)|
+     | [第二周](./week2.md) | [第三周](./week3.md) | [月测一](./CSP-M1.md) | [第四周](./week4.md) |[CSP-201512-3](./CSP-201512-3.md)|
      |---|---|---|---|---|
-     | [**week5**](./week5.md) | [**week6限时大模拟**](./week6模拟.md) | [**week6**](./week6.md) | [**week7**](./week7.md) | [**CSP-201604-3**](./csp201604-3.md) | 
-     | [**CSP-M2**](./CSP-M2.md) | | | | |
- 
-    
+     | [**第五周**](./week5.md) | [**第六周限时模拟**](./week6模拟.md) | [**第六周**](./week6.md) | [**第七周**](./week7.md) | [**CSP-201604-3**](./csp201604-3.md) | 
+     | [**月测二**](./CSP-M2.md) | | | | | 
+     **未完待续**
+      
