@@ -1,10 +1,11 @@
-﻿# Personal  profile
+﻿#  Blog of xupengbo
+## Personal  profile
 
   name | city | College | major | 
   ------- | ------- | ------- | ------- | 
   | XuPengbo | Tsingtao | ShandongUniversity | ArtificialIntelligence
   [``My HomePage``](https://www.xupengbo.cn) &nbsp;&nbsp;&nbsp;  [``My alma mater``](https://www.sdu.edu.cn/sdgk/sdjj.htm) 
-# blog    
+## blog    
    + Program design thinking and practice(CSP) 
    
      | [week2](./week2.md) | [week3](./week3.md) | [CSP-M1](./CSP-M1.md) | [week4](./week4.md) |[CSP-201512-3](./CSP-201512-3.md)|
