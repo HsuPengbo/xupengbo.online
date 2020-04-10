@@ -1,4 +1,7 @@
+<html>
+
 <style type="text/css">a {text-decoration: none}</style>
+<body>
 + Personal  profile
   <table>                 
   <tr> <td> name  </td> <td> sex   </td>  <td> city  </td> <td> College</td><td> major </td>  </tr>       <tr> <td> Xu Pengbo  </td> <td> male </td><td> Tsingtao  </td>  <td>Shandong University </td> <td> Artificial Intelligence</td>  </tr>                 
@@ -25,6 +28,7 @@
      <td> </td>
      <td> </td> 
 </tr> 
-</table>     
-
+</table> 
+</body>
+</html>
     
