@@ -1,6 +1,7 @@
 <html>
-
-<style type="text/css">a {text-decoration: none}</style>
+<head>
+     <style type="text/css">a {text-decoration: none}</style>
+</head>
 <body>
 + Personal  profile
   <table>                 
