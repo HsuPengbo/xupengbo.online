@@ -10,7 +10,7 @@
   + Program design thinking and practice
  
 <table>     
-<tr> <td> [第二周][week2]       </td> 
+<tr> <td><a href="https://hsupengbo.github.io/week2.md">[第二周]</a></td> 
      <td> [第三周][week3]       </td>
      <td> [模测一][CSP-M1]      </td>
      <td> [第四周][week4]       </td>
@@ -32,7 +32,7 @@
 </table>     
        
 
-[week2]:https://hsupengbo.github.io/week2.md "第二周"
+[week2]: "第二周"
 [week3]:https://hsupengbo.github.io/week3.md "第三周"
 [CSP-M1]:https://hsupengbo.github.io/CSP-M1.md "模测一"
 [week4]:https://hsupengbo.github.io/week4.md "第四周"
