@@ -1,10 +1,10 @@
 ﻿#  Blog of xupengbo
 ## Personal  profile
 
-  name | city | College | major | 
-  ------- | ------- | ------- | ------- | 
-  | XuPengbo | Tsingtao | ShandongUniversity | ArtificialIntelligence
-  [``My HomePage``](https://www.xupengbo.cn) &nbsp;&nbsp;&nbsp;  [``My alma mater``](https://www.sdu.edu.cn/sdgk/sdjj.htm) 
+  |name | city | College | major | 
+  |------- | ------- | ------- | ------- | 
+  | Xu Pengbo | Tsingtao | Shandong University | Artificial Intelligence|
+  [**My HomePage**](https://www.xupengbo.cn) &nbsp;&nbsp;&nbsp;  [**My alma mater**](https://www.sdu.edu.cn/sdgk/sdjj.htm) 
 ## blog    
    + Program design thinking and practice(CSP) 
    
