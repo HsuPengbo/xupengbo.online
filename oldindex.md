@@ -8,32 +8,22 @@
   </table>
 + blog 
   + Program design thinking and practice
-    + ()
-    + (./)
-    + (./.md)
-    +(./.md)
-    + (./.md)
-    + (./.md)
-    + (./.md)
-    + (./.md)
-    + (./.md)
-    +(./.md)
-    + (./.md)
+ 
 <table>     
-<tr> <td> [week2]<https://hsupengbo.github.io/week2.md>  </td> 
-     <td> [week3]<https://hsupengbo.github.io/week3.md>  </td>
-     <td> [CSP-M1]<https://hsupengbo.github.io/CSP-M1.md></td>
-     <td> [week4]<https://hsupengbo.github.io/week4.md>  </td>
-     <td> [CSP-201512-3]<https://hsupengbo.github.io/CSP-201512-3.md>  </td>
+<tr> <td> [week2] </td> 
+     <td> [week3]  </td>
+     <td> [CSP-M1]</td>
+     <td> [week4]<https://hsupengbo.github.io/week4.md  </td>
+     <td> [CSP-201512-3]  </td>
 </tr>   
 <tr> 
-     <td> [week5]<https://hsupengbo.github.io/week5.md> </td>
-     <td> [week6限时大模拟]<https://hsupengbo.github.io/week6模拟.md> </td>
-     <td> [week6]<https://hsupengbo.github.io/week6.md> </td>
-     <td> [week7]<https://hsupengbo.github.io/week7.md> </td>
-     <td> [CSP-201604-3]<https://hsupengbo.github.io/csp201604-3.md> </td>
+     <td> [week5] </td>
+     <td> [week6限时大模拟] </td>
+     <td> [week6] </td>
+     <td> [week7] </td>
+     <td> [CSP-201604-3] </td>
 </tr> 
-<tr> <td> [CSP-M2]<https://hsupengbo.github.io/CSP-M2.md> </td>  
+<tr> <td> [CSP-M2] </td>  
      <td> </td>   
      <td> </td>  
      <td> </td>
