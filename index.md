@@ -3,8 +3,8 @@
   <table>                 
   <tr> <td> name  </td> <td> sex   </td>  <td> city  </td> <td> College</td><td> major </td>  </tr>       <tr> <td> Xu Pengbo  </td> <td> male </td><td> Tsingtao  </td>  <td>Shandong University </td> <td> Artificial Intelligence</td>  </tr>                 
   </table>
-  
-   |``[My Homepage]``[Page](https://www.xupengbo.cn)  |``[My College]``[University](https://www.sdu.edu.cn)|
+   
+   :+1: [My HomePage](https://www.xupengbo.cn)  :+1:  [My University](https://www.sdu.edu.cn) 
 + blog    
   + Program design thinking and practice(CSP) 
   
