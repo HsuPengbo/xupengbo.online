@@ -1,4 +1,4 @@
-﻿#  Blog of xupengbo
+﻿**Blog of xupengbo**  
 ## Personal  profile
 
   |  name |  city |College| major |
