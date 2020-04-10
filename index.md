@@ -5,20 +5,20 @@
 + blog    
   + Program design thinking and practice(CSP) 
 <table>     
-<tr> <td><a  href="./week2.md">[week2]</a> </td> 
-     <td><a  href="./week3.md">[week3]</a> </td>
-     <td><a  href="./CSP-M1.md">[CSP-M1]</a> </td>
-     <td><a  href="./week4.md">[week4]</a> </td>
-     <td><a  href="./CSP-201512-3.md">[CSP-201512-3]</a> </td>
+<tr> <td><a  href="./week2.html">[week2]</a> </td> 
+     <td><a  href="./week3.html">[week3]</a> </td>
+     <td><a  href="./CSP-M1.html">[CSP-M1]</a> </td>
+     <td><a  href="./week4.html">[week4]</a> </td>
+     <td><a  href="./CSP-201512-3.html">[CSP-201512-3]</a> </td>
 </tr>   
 <tr> 
-     <td><a  href="./week5.md">[week5]</a> </td>
-     <td><a  href="./week6模拟.md">[week6限时大模拟]</a> </td>
-     <td><a  href="./week6.md">[week6]</a> </td>
-     <td><a  href="./week7.md">[week7]</a> </td>
-     <td><a  href="./csp201604-3.md">[CSP-201604-3]</a> </td>
+     <td><a  href="./week5.html">[week5]</a> </td>
+     <td><a  href="./week6模拟.html">[week6限时大模拟]</a> </td>
+     <td><a  href="./week6.html">[week6]</a> </td>
+     <td><a  href="./week7.html">[week7]</a> </td>
+     <td><a  href="./csp201604-3.html">[CSP-201604-3]</a> </td>
 </tr> 
-<tr> <td><a  href="./CSP-M2.md">[CSP-M2]</a> </td>  
+<tr> <td><a  href="./CSP-M2.html">[CSP-M2]</a> </td>  
      <td><a  href="./ "> </a> </td>   
      <td><a  href="./ "> </a> </td>  
      <td><a  href="./ "> </a> </td>
