@@ -80,8 +80,8 @@ Sum[i-1]  = Sum[i]-1
 <!-- wp:heading {"level":3} -->
 ### Codes  
 重测数据:
-<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/2.png" alt="" class="wp-image-256"/>
 
+<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/A.png" alt="" class="wp-image-256"/>
 
 <!-- wp:code -->
 ```
