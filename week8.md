@@ -78,13 +78,10 @@ Sum[i-1]  = Sum[i]-1
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-### Codes 
-<!-- wp:heading {"level":3} -->
+### Codes  
 重测数据:
-<!-- /wp:heading -->
-<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/1.png" alt="" class="wp-image-255"/>
-<!-- /wp:image -->
-<!-- /wp:heading -->
+<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/2.png" alt="" class="wp-image-256"/>
+
 
 <!-- wp:code -->
 ```
@@ -237,12 +234,10 @@ int main(){
 
 <!-- wp:heading {"level":3} -->
 ###  Codes 
-<!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>Codes</h3>
-<!-- /wp:heading -->
+<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/1.png" alt="" class="wp-image-255"/>
+<!-- /wp:image -->
 
-<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/2.png" alt="" class="wp-image-256"/>
+
 <!-- wp:code -->
 <pre class="wp-block-code"><code>#include&lt;iostream>
 #include&lt;queue>
@@ -409,6 +404,8 @@ Case 2: 2
 
 <!-- wp:heading {"level":3} -->
 ### Codes 
+
+<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/2.png" alt="" class="wp-image-256"/>
 <!-- /wp:heading -->
 
 <!-- wp:code -->
