@@ -91,10 +91,10 @@ Sum[i-1]  = Sum[i]-1
 <!-- /wp:heading -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code>
-#include&lt;iostream>
-#include&lt;queue>
-#include&lt;cstring>
+```
+#include<iostream>
+#include<queue>
+#include<cstring>
 using namespace std;
 const int MAXN=200005;
 const int maxn=50005;
@@ -105,7 +105,7 @@ struct Edge{
 }e[MAXN];
 int head[maxn],sum[maxn],tot;
 bool vis[maxn];
-queue&lt;int> q;
+queue<int> q;
 void init(){
 	tot=0;MAX=-1;
 	memset(head,-1,sizeof(head));
@@ -119,7 +119,7 @@ void addEdge(int u,int v,int w){
 	tot++;
 }
 void spfa(int s) {
-	for(int i = 0; i &lt;= MAX; ++i) 
+	for(int i = 0; i <= MAX; ++i) 
 		sum[i] = -inf;
 	memset(vis,false,sizeof(vis));
 	q.push(s); sum[s] = 0; vis[s] = true;  
@@ -128,8 +128,8 @@ void spfa(int s) {
 		vis[u] = false; 
 		 for(int i = head[u]; i!=-1; i = e[i].next) {
 			int v = e[i].to;  
-			if(sum[v] &lt; sum[u] + e[i].w) {
-				sum[v] = sum[u] + e[i].w; 
+			if(sum[v] < sum[u] + e[i].w) {
+				sum[v] = sum[u] + e[i].w;
 				if(!vis[v]) {
 					q.push(v);
 					vis[v] = true;
@@ -137,24 +137,26 @@ void spfa(int s) {
 			}
 		 } 
 	}
-	cout&lt;&lt;sum[MAX]; 
+	cout<<sum[MAX]; 
 }
 int main(){
-    scanf("%d",&amp;n);
+    scanf("%d",&n);
     int u,v,w;
     init();
-    for(int i=0;i&lt;n;++i){
-    	scanf("%d%d%d",&amp;u,&amp;v,&amp;w); 
+    for(int i=0;i<n;++i){
+    	scanf("%d%d%d",&u,&v,&w); 
 		MAX=v>MAX?v:MAX;
-    	addEdge(u-1,v,w); 
-    }   
-    for(int i=1;i&lt;=MAX;++i) {
-    	addEdge(i-1,i,0);
-    	addEdge(i,i-1,-1);
+    	addEdge(u,v+1,w); 
+    }  
+    ++MAX;
+    for(int i=0;i<=MAX;++i) {
+    	addEdge(i,i+1,0);
+    	addEdge(i+1,i,-1);
 	}
     spfa(0);
 	return 0;
-}</code></pre>
+}
+```
 <!-- /wp:code -->
 
 <!-- wp:heading -->
