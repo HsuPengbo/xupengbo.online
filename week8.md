@@ -57,15 +57,6 @@
 6
 ```
 <!-- /wp:code -->
-
-<!-- wp:heading {"level":3} -->
-###  Note 
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
 <!-- wp:heading {"level":3} -->
 ### Idea 
 <!-- /wp:heading -->
@@ -88,11 +79,17 @@ Sum[i-1]  = Sum[i]-1
 
 <!-- wp:heading {"level":3} -->
 ### Codes 
+<!-- wp:heading {"level":3} -->
+<h3>Codes</h3>
+<!-- /wp:heading -->
+<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/1.png" alt="" class="wp-image-255"/>
+<!-- /wp:image -->
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 ```
 #include<iostream>
+#include<cstdio>
 #include<queue>
 #include<cstring>
 using namespace std;
@@ -241,7 +238,11 @@ int main(){
 <!-- wp:heading {"level":3} -->
 ###  Codes 
 <!-- /wp:heading -->
+<!-- wp:heading {"level":3} -->
+<h3>Codes</h3>
+<!-- /wp:heading -->
 
+<img src="https://www.xupengbo.cn/wp-content/uploads/2020/04/2.png" alt="" class="wp-image-256"/>
 <!-- wp:code -->
 <pre class="wp-block-code"><code>#include&lt;iostream>
 #include&lt;queue>
