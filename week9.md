@@ -1,3 +1,4 @@
+# 程序思维设计与实践 第九周     &nbsp;    [返回首页](./index.md)&nbsp;  [上篇Week8](./week8.md)
 <!-- wp:heading -->
 <h2 id="problem-title">A - 咕咕东的目录管理器</h2>
 <!-- /wp:heading -->
@@ -660,3 +661,4 @@ int main(){
 	return 0;
 } </code></pre>
 <!-- /wp:code -->
+# 结束      &nbsp;    [返回首页](./index.md)&nbsp;  [下篇待定]
