@@ -1,4 +1,4 @@
-#  程序设计思维与实践 week10 作业+限时模拟
+#  程序设计思维与实践 week10 作业+限时模拟 &nbsp;[返回首页](./index.md)[上篇week9](./week9.md)
 <!-- wp:heading -->
 <h2>Problem A - 签到题</h2>
 <!-- /wp:heading -->
@@ -806,3 +806,4 @@ int main(){
 	return 0;
 } </code></pre>
 <!-- /wp:code -->
+# 结束！&nbsp;[返回首页](./index.md)[下篇待定]
