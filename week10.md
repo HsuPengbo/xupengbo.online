@@ -1,5 +1,6 @@
 #  程序设计思维与实践 week10作业+限时模拟  [返回首页](./index.md) [上篇week9](./week9.md)
 <!-- wp:heading -->
+# 作业
 <h2>Problem A - 签到题</h2>
 <!-- /wp:heading -->
 
@@ -400,7 +401,7 @@ int main(){
 	return 0;
 } </code></pre>
 <!-- /wp:code -->
-
+# 限时模拟
 <!-- wp:heading -->
 <h2>Problem A - Divide a Cuboid</h2>
 <!-- /wp:heading -->
