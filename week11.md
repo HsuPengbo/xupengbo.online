@@ -25,7 +25,7 @@
  8
  ``` 
 ### Idea
-
+这道题很简单，就是拿每年房子的房价和年薪积累和比较，如果20年内都不能买就认为不可能。
 
 ### Codes
 ```
@@ -49,79 +49,33 @@ int main(){
 } 
 ```
 
-<h2>Problem B-蒜头君列队</h2>
-<!-- /wp:heading -->
+## Problem B-蒜头君列队 
+### Description 
+蒜头君的班级里有 n^2n2 个同学，现在全班同学已经排列成一个 n * nn∗n 的方阵，但是老师却临时给出了一组新的列队方案
+为了方便列队，所以老师只关注这个方阵中同学的性别，不看具体的人是谁
+这里我们用 00 表示男生，用 11 表示女生
+现在蒜头君告诉你同学们已经排好的方阵是什么样的，再告诉你老师希望的方阵是什么样的
+他想知道同学们已经列好的方阵能否通过顺时针旋转变成老师希望的方阵
 
-<!-- wp:heading {"level":3} -->
-<h3>Description</h3>
-<!-- /wp:heading -->
+不需要旋转则输出 00
+``
+顺时针旋转 90° 则输出 11
+顺时针旋转 180° 则输出 22
+顺时针旋转 270° 则输出 33
+若不满足以上四种情况则输出 -1−1
+若满足多种情况，则输出较小的数字
+``
+### Input
+第一行为一个整数 nn
+接下来的 nn 行同学们已经列好的 0101 方阵；
+再接下来的 nn 行表示老师希望的的 0101 方阵。
 
-<!-- wp:paragraph -->
-<p>蒜头君的班级里有&nbsp;n^2<em>n</em>2&nbsp;个同学，现在全班同学已经排列成一个&nbsp;n * n<em>n</em>∗<em>n</em>&nbsp;的方阵，但是老师却临时给出了一组新的列队方案</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>为了方便列队，所以老师只关注这个方阵中同学的性别，不看具体的人是谁</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>这里我们用&nbsp;00&nbsp;表示男生，用&nbsp;11&nbsp;表示女生</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>现在蒜头君告诉你同学们已经排好的方阵是什么样的，再告诉你老师希望的方阵是什么样的</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>他想知道同学们已经列好的方阵能否通过顺时针旋转变成老师希望的方阵</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list {"ordered":true} -->
-<ol><li>不需要旋转则输出&nbsp;00</li><li>顺时针旋转 90° 则输出&nbsp;11</li><li>顺时针旋转 180° 则输出&nbsp;22</li><li>顺时针旋转 270° 则输出&nbsp;33</li></ol>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>若不满足以上四种情况则输出&nbsp;-1−1</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>若满足多种情况，则输出较小的数字</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Input</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>第一行为一个整数&nbsp;n<em>n</em></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>接下来的&nbsp;n<em>n</em>&nbsp;行同学们已经列好的&nbsp;0101&nbsp;方阵；</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>再接下来的&nbsp;n<em>n</em>&nbsp;行表示老师希望的的&nbsp;0101&nbsp;方阵。</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Output</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>
-
+### Output
 输出仅有一行，该行只有一个整数，如题所示。
 
-</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3> Sample Input</h3>
-<!-- /wp:heading -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>4
+### Sample Input
+```
+4
 0 0 0 0
 0 0 0 0
 0 1 0 0
@@ -129,27 +83,22 @@ int main(){
 0 0 0 0
 0 1 0 0
 0 0 0 0
-0 0 0 0</code></pre>
-<!-- /wp:code -->
+0 0 0 0
+```
+### Sample Output
 
-<!-- wp:heading {"level":3} -->
-<h3>Sample Output</h3>
-<!-- /wp:heading -->
+```
+1
+```
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code>1</code></pre>
-<!-- /wp:code -->
+### Idea
+就是拿初始矩阵和变换后矩阵比较，
+不旋转:A[i][j]=B[i][j]
+旋转90度:A[i][j]=B[j][N-1-i]
+旋转180度:A[i][j]=B[N-1-i][N-1-j]
+旋转270度:A[i][j]=B[N-1-j][i]
 
-<!-- wp:heading {"level":3} -->
-<h3>Idea</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Codes</h3>
+### Codes
 <!-- /wp:heading -->
 
 <!-- wp:code -->
