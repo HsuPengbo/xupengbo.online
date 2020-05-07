@@ -1,3 +1,4 @@
+#  程序设计思维与实践第十一周  [返回首页](./index.md) [上篇week10作业+限时模拟](./week10.md)
 <!-- wp:heading -->
 <h2>Problem A-买房子</h2>
 <!-- /wp:heading -->
