@@ -1,7 +1,7 @@
 #  程序设计思维与实践第十一周  [返回首页](./index.md) [上篇week10作业+限时模拟](./week10.md)
 ## Problem A-买房子
 ### Description 
-蒜头君从现在开始工作，年薪 NN 万。他希望在蒜厂附近买一套 6060 平米的房子，现在价格是 200200 万。假设房子价格以每年百分之 KK 增长，并且蒜头君未来年薪不变，且不吃不喝，不用交税，每年所得 NN 万全都积攒起来，问第几年能够买下这套房子？（第一年年薪 NN 万，房价 200200 万）
+蒜头君从现在开始工作，年薪 NN 万。他希望在蒜厂附近买一套 6060 平米的房子，现在价格是 200200 万。假设房子价格以每年百分之 KK 增长，并且蒜头君未来年薪不变，且不吃不喝，不用交税，每年所得 NN 万全都积攒起来，问第几年能够买下这套房子？（第一年年薪 NN 万，房价 200 万）
  
 ### Input  
 一行，包含两个正整数 N(10≤N≤50)，K(1≤K≤20)，中间用单个空格隔开。
@@ -55,17 +55,17 @@ int main(){
 
 ```
 不需要旋转则输出 00
-顺时针旋转 90° 则输出 11
-顺时针旋转 180° 则输出 22
-顺时针旋转 270° 则输出 33
-若不满足以上四种情况则输出 -1−1
-若满足多种情况，则输出较小的数字
+顺时针旋转 90° 则输出 11  
+顺时针旋转 180° 则输出 22  
+顺时针旋转 270° 则输出 33  
+若不满足以上四种情况则输出 -1−1  
+若满足多种情况，则输出较小的数字  
 ```
 
 ### Input
-第一行为一个整数 nn
-接下来的 nn 行同学们已经列好的 0101 方阵；
-再接下来的 nn 行表示老师希望的的 0101 方阵。
+第一行为一个整数 nn  
+接下来的 nn 行同学们已经列好的 0101 方阵；  
+再接下来的 nn 行表示老师希望的的 0101 方阵。  
 
 ### Output
 输出仅有一行，该行只有一个整数，如题所示。
@@ -90,10 +90,12 @@ int main(){
 
 ### Idea
 就是拿初始矩阵和变换后矩阵比较，
+```
 不旋转:A[i][j]=B[i][j]
 旋转90度:A[i][j]=B[j][N-1-i]
 旋转180度:A[i][j]=B[N-1-i][N-1-j]
 旋转270度:A[i][j]=B[N-1-j][i]
+```
 
 ### Codes
 ```
@@ -182,68 +184,224 @@ int main(){
 
 ## Problem D- Sushi for Two
 ### Description
-
+东东和他的女朋友(幻想的)去寿司店吃晚餐(在梦中)，他发现了一个有趣的事情，这家餐厅提供的 n 个的寿司被连续的放置在桌子上 (有序)，东东可以选择一段连续的寿司来吃
+东东想吃鳗鱼，但是东妹想吃金枪鱼。核 平 起 见，他们想选择一段连续的寿司（这段寿司必须满足金枪鱼的数量等于鳗鱼的数量，且前一半全是一种，后一半全是另外一种）我们用1代表鳗鱼，2代表金枪鱼。
+比如，[2,2,2,1,1,1]这段序列是合法的，[1,2,1,2,1,2]是非法的。因为它不满足第二个要求。
+东东希望你能帮助他找到最长的一段合法寿司，以便自己能吃饱。
 ### Input
-
+输入：
+第一行：一个整数n（2≤n≤100000），寿司序列的长度。
+第二行：n个整数（每个整数不是1就是2，意义如上所述）
 ### Output
-
+输出：一个整数（代表东东可以选择的最长的一段连续的且合法的寿司）
 ### Sample Input
 ```
-
+7
+2 2 2 1 1 2 2
 ```
 ### Sample Output
 ```
-
+4
 ```
 ### Idea
 
 ### Codes
 ```
-
+#include<iostream> 
+#include<cmath>
+using namespace std;
+const int maxn=100005;
+int n,s[maxn];
+int t[maxn],f[maxn];
+void solve(){
+	s[0]=0; int tot=0,ans=0; 
+	for(int i=1;i<=n;++i){
+		if(s[i]!=s[i-1]) t[++tot]=i;  
+	}
+	t[++tot]=n+1; int len;
+	for(int i=1;i<tot;++i) f[i]=t[i+1]-t[i];  
+	for(int i=1;i<tot-1;++i){
+		len=min(f[i],f[i+1]);
+		if(ans<len) ans=len;
+	} 
+	printf("%d",ans*2);
+}
+int main(){
+	scanf("%d",&n);
+	for(int i=1;i<=n;++i) {
+	  scanf("%d",&s[i]);	 
+	}
+	solve();
+	return 0;
+}
 ```
 
 ## Problem E-Cash Machine
 ### Description
+A Bank plans to install a machine for cash withdrawal. The machine is able to deliver appropriate @ bills for a requested cash amount. The machine uses exactly N distinct bill denominations, say Dk, k=1,N, and for each denomination Dk the machine has a supply of nk bills. For example,
 
+N=3, n1=10, D1=100, n2=4, D2=50, n3=5, D3=10
+
+means the machine has a supply of 10 bills of @100 each, 4 bills of @50 each, and 5 bills of @10 each.
+
+Call cash the requested amount of cash the machine should deliver and write a program that computes the maximum amount of cash less than or equal to cash that can be effectively delivered according to the available bill supply of the machine.
 ### Input
+The program input is from standard input. Each data set in the input stands for a particular transaction and has the format:
+
+cash N n1 D1 n2 D2 ... nN DN
+
+where 0 <= cash <= 100000 is the amount of cash requested, 0 <=N <= 10 is the number of bill denominations and 0 <= nk <= 1000 is the number of available bills for the Dk denomination, 1 <= Dk <= 1000, k=1,N. White spaces can occur freely between the numbers in the input. The input data are correct.
 
 ### Output
+For each set of data the program prints the result to the standard output on a separate line as shown in the examples below.
 
 ### Sample Input
 ```
-
+735 3  4 125  6 5  3 350
+633 4  500 30  6 100  1 5  0 1
+735 0
+0 3  10 100  10 50  10 10
 ```
 ### Sample Output
 ```
-
+735
+630
+0
+0
 ```
 ### Idea
 
 ### Codes
 ```
-
+#include<iostream> 
+#include<cstring>
+using namespace std;
+const int maxn=1010;
+const int MAXN=1e5;
+int N,Sum,cnt;
+int W[maxn], C[maxn];//面额,数量 
+int ww[MAXN],f[MAXN];
+void Part(){
+	cnt=0;
+	for(int i=1;i<=N;++i){
+		int t=C[i];
+		for(int k=1;k<=t;k<<=1){
+			cnt++;
+			ww[cnt]=k*W[i]; 
+			t-=k;
+		}
+		if(t>0){
+			cnt++;
+			ww[cnt]=t*W[i]; 
+		}
+	}
+}
+void solve(){
+	if(N==0||Sum==0) { printf("0\n"); return; } 
+	Part();
+	//for(int i=1;i<=cnt;i++)  	cout<<ww[i]<<" "; cout<<endl;
+	memset(f,0,sizeof(f));
+	for(int i=1;i<=cnt;++i)
+		for(int j=Sum;j>=ww[i];--j){
+			f[j]=max(f[j],f[j-ww[i]]+ww[i]);
+		}
+	int ans=f[Sum];
+	printf("%d\n",ans);
+}
+int main(){
+	while(~scanf("%d%d",&Sum,&N)){
+		for(int i=1;i<=N;++i){
+			scanf("%d%d",&C[i],&W[i]);
+		} 
+		solve();
+	}
+	return 0;
+}
 ```
 
 ## Problem F- CD
 ### Description
+You have a long drive by car ahead. You have a tape recorder, but unfortunately your best music is on CDs. You need to have it on tapes so the problem to solve is: you have a tape N minutes long. How to choose tracks from CD to get most out of tape space and have as short unused space as possible.
+
+Assumptions:
+```
+• number of tracks on the CD does not exceed 20
+• no track is longer than N minutes
+• tracks do not repeat
+• length of each track is expressed as an integer number
+• N is also integer
+```
+Program should find the set of tracks which fills the tape best and print it in the same sequence as the tracks are stored on the CD
 
 ### Input
-
+Any number of lines. Each one contains value N, (after space) number of tracks and durations of the tracks. For example from first line in sample data: N = 5, number of tracks=3, first track lasts for 1 minute, second one 3 minutes, next one 4 minutes
 ### Output
+Set of tracks (and durations) which are the correct solutions and string ‘sum:’ and sum of duration times.
 
 ### Sample Input
 ```
-
+5 3 1 3 4
+10 4 9 8 4 2
+20 4 10 5 7 4
+90 8 10 23 1 2 3 4 5 7
+45 8 4 10 44 43 12 9 8 2
 ```
 ### Sample Output
 ```
-
+1 4 sum:5
+8 2 sum:10
+10 5 4 sum:19
+10 23 1 2 3 4 5 7 sum:55
+4 10 12 9 8 2 sum:45
 ```
 ### Idea
 
 ### Codes
 ```
-
+#include<iostream> 
+#include<cstring>
+using namespace std;
+const int maxn=1010;
+const int MAXN=1e5;
+int N,Sum,cnt;
+int W[maxn], C[maxn];//面额,数量 
+int ww[MAXN],f[MAXN];
+void Part(){
+	cnt=0;
+	for(int i=1;i<=N;++i){
+		int t=C[i];
+		for(int k=1;k<=t;k<<=1){
+			cnt++;
+			ww[cnt]=k*W[i]; 
+			t-=k;
+		}
+		if(t>0){
+			cnt++;
+			ww[cnt]=t*W[i]; 
+		}
+	}
+}
+void solve(){
+	if(N==0||Sum==0) { printf("0\n"); return; } 
+	Part();
+	//for(int i=1;i<=cnt;i++)  	cout<<ww[i]<<" "; cout<<endl;
+	memset(f,0,sizeof(f));
+	for(int i=1;i<=cnt;++i)
+		for(int j=Sum;j>=ww[i];--j){
+			f[j]=max(f[j],f[j-ww[i]]+ww[i]);
+		}
+	int ans=f[Sum];
+	printf("%d\n",ans);
+}
+int main(){
+	while(~scanf("%d%d",&Sum,&N)){
+		for(int i=1;i<=N;++i){
+			scanf("%d%d",&C[i],&W[i]);
+		} 
+		solve();
+	}
+	return 0;
+}
 ```
 
 #  结束！  [返回首页](./index.md) [下篇待定]
