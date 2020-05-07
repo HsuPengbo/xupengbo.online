@@ -386,11 +386,10 @@ using namespace std;
 const int maxn=10005;
 int N,M;string ans;
 int W[22];
-int f[maxn][maxn];bool p[maxn];
+int f[maxn][maxn];
 void solve(){
 	for(int i=0;i<=N;++i)
 		f[0][i]=0;
-	memset(p,false,sizeof(p)); 
 	for(int i=1;i<=M;++i)
 		for(int j=0;j<=N;++j){
 			f[i][j]=f[i-1][j];
