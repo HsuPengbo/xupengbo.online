@@ -1,51 +1,29 @@
 #  程序设计思维与实践第十一周  [返回首页](./index.md) [上篇week10作业+限时模拟](./week10.md)
-<!-- wp:heading -->
-<h2>Problem A-买房子</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Description</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
+## Problem A-买房子
+### Description 
 <p>蒜头君从现在开始工作，年薪&nbsp;N<em>N</em>&nbsp;万。他希望在蒜厂附近买一套&nbsp;6060&nbsp;平米的房子，现在价格是&nbsp;200200&nbsp;万。假设房子价格以每年百分之&nbsp;K<em>K</em>&nbsp;增长，并且蒜头君未来年薪不变，且不吃不喝，不用交税，每年所得&nbsp;N<em>N</em>&nbsp;万全都积攒起来，问第几年能够买下这套房子？（第一年年薪&nbsp;N<em>N</em>&nbsp;万，房价&nbsp;200200&nbsp;万）</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Input</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
+ 
+### Input  
+ 
 <p>一行，包含两个正整数&nbsp;N(10 \le N \le 50)<em>N</em>(10≤<em>N</em>≤50)，K(1 \le K \le 20)<em>K</em>(1≤<em>K</em>≤20)，中间用单个空格隔开。</p>
-<!-- /wp:paragraph -->
+ 
+ 
+### Output 
 
-<!-- wp:heading {"level":3} -->
-<h3>Output</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
 <p>如果在第&nbsp;2020&nbsp;年或者之前就能买下这套房子，则输出一个整数&nbsp;M<em>M</em>，表示最早需要在第&nbsp;M<em>M</em>&nbsp;年能买下；否则输出<code>"Impossible"</code>。</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
 <p>输出时每行末尾的多余空格，不影响答案正确性</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
-<h3> Sample Input</h3>
-<!-- /wp:heading -->
-
-<!-- wp:preformatted -->
-<pre class="wp-block-preformatted">50 10</pre>
-<!-- /wp:preformatted -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Sample Output</h3>
-<!-- /wp:heading -->
-
-<!-- wp:preformatted -->
-<pre class="wp-block-preformatted">8</pre>
-<!-- /wp:preformatted -->
+### Sample Input 
+ 
+```
+50 10
+``` 
+ 
+### Sample Output  
+ ```
+ 8
+ ``` 
 
 <!-- wp:heading {"level":3} -->
 <h3>Idea</h3>
