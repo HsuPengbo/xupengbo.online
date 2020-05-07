@@ -1,5 +1,7 @@
 #  程序设计思维与实践第十一周  [返回首页](./index.md) [上篇week10作业+限时模拟](./week10.md)
+
 ## Problem A-买房子
+
 ### Description 
 蒜头君从现在开始工作，年薪 NN 万。他希望在蒜厂附近买一套 6060 平米的房子，现在价格是 200200 万。假设房子价格以每年百分之 KK 增长，并且蒜头君未来年薪不变，且不吃不喝，不用交税，每年所得 NN 万全都积攒起来，问第几年能够买下这套房子？（第一年年薪 NN 万，房价 200 万）
  
@@ -46,6 +48,7 @@ int main(){
 ```
 
 ## Problem B-蒜头君列队 
+
 ### Description 
 蒜头君的班级里有 n^2n2 个同学，现在全班同学已经排列成一个 n * nn∗n 的方阵，但是老师却临时给出了一组新的列队方案
 为了方便列队，所以老师只关注这个方阵中同学的性别，不看具体的人是谁
@@ -98,7 +101,7 @@ int main(){
 ```
 
 ### Codes
-```
+```cpp
 #include<iostream>
 #include<cstdio>
 using namespace std;
@@ -162,7 +165,7 @@ IN WAR, EVENTS OF IMPORTANCE ARE THE RESULT OF TRIVIAL CAUSES
 规律:字母X对应的明文是``'A'+ (21+X-'A')%26``
 
 ###  Codes
-```
+```cpp
 #include<iostream>
 #include<cstring> 
 using namespace std;
@@ -184,16 +187,23 @@ int main(){
 
 ## Problem D- Sushi for Two
 ### Description
-东东和他的女朋友(幻想的)去寿司店吃晚餐(在梦中)，他发现了一个有趣的事情，这家餐厅提供的 n 个的寿司被连续的放置在桌子上 (有序)，东东可以选择一段连续的寿司来吃
-东东想吃鳗鱼，但是东妹想吃金枪鱼。核 平 起 见，他们想选择一段连续的寿司（这段寿司必须满足金枪鱼的数量等于鳗鱼的数量，且前一半全是一种，后一半全是另外一种）我们用1代表鳗鱼，2代表金枪鱼。
-比如，[2,2,2,1,1,1]这段序列是合法的，[1,2,1,2,1,2]是非法的。因为它不满足第二个要求。
-东东希望你能帮助他找到最长的一段合法寿司，以便自己能吃饱。
-### Input
-输入：
-第一行：一个整数n（2≤n≤100000），寿司序列的长度。
-第二行：n个整数（每个整数不是1就是2，意义如上所述）
+Arkady invited Anna for a dinner to a sushi restaurant. The restaurant is a bit unusual: it offers nn pieces of sushi aligned in a row, and a customer has to choose a continuous subsegment of these sushi to buy.
+
+The pieces of sushi are of two types: either with tuna or with eel. Let's denote the type of the ii-th from the left sushi as titi, where ti=1ti=1 means it is with tuna, and ti=2ti=2 means it is with eel.
+
+Arkady does not like tuna, Anna does not like eel. Arkady wants to choose such a continuous subsegment of sushi that it has equal number of sushi of each type and each half of the subsegment has only sushi of one type. For example, subsegment [2,2,2,1,1,1][2,2,2,1,1,1] is valid, but subsegment [1,2,1,2,1,2][1,2,1,2,1,2] is not, because both halves contain both types of sushi.
+
+Find the length of the longest continuous subsegment of sushi Arkady can buy.
+### Input 
+The first line contains a single integer nn (2≤n≤1000002≤n≤100000) — the number of pieces of sushi.
+
+The second line contains nn integers t1t1, t2t2, ..., tntn (ti=1ti=1, denoting a sushi with tuna or ti=2ti=2, denoting a sushi with eel), representing the types of sushi from left to right.
+
+It is guaranteed that there is at least one piece of sushi of each type. Note that it means that there is at least one valid continuous segment.
+
 ### Output
-输出：一个整数（代表东东可以选择的最长的一段连续的且合法的寿司）
+Print a single integer — the maximum length of a valid continuous segment.
+
 ### Sample Input
 ```
 7
@@ -204,9 +214,13 @@ int main(){
 4
 ```
 ### Idea
+这道题可以分几步，先实现把相同的连续字符作为一段，把每段起点记录下来形成列表。
+然后通过后段的起点-前一段的起点得到每段的长度。(最后一段由n+1-最后一段起点得到)
+对于一个合法序列，必然是由两个不同段组成的，而上面得到的段，相邻之间必然是不同段，所以我们只需要考虑相邻的两段，
+由于需要长度相等，所以相邻两段较短的一段作为标准，两段取同一长度组成序列，只需要遍历一遍找到最大值即可。属于O(N)复杂度
 
 ### Codes
-```
+```cpp
 #include<iostream> 
 #include<cmath>
 using namespace std;
@@ -270,9 +284,12 @@ For each set of data the program prints the result to the standard output on a s
 0
 ```
 ### Idea
+这道题属于刚学的多重背包问题，有n种面额钱币，每种有C[i]件，每种的价值W[i]就是其面额大小，背包容量是给定需要兑换的现金数Sum。
+先对每种钱币进行二进制拆分，比如4张125的可以拆分为125,250,125。
+之后进行0-1背包。由于本题不需要打印方案，所以我们选择滚动数组进行递推。把f[i][j] 由 f[i-1][j] 和 f[i-1][j-w[i]] 两个子问题递推过来。
 
 ### Codes
-```
+```cpp
 #include<iostream> 
 #include<cstring>
 using namespace std;
@@ -298,8 +315,7 @@ void Part(){
 }
 void solve(){
 	if(N==0||Sum==0) { printf("0\n"); return; } 
-	Part();
-	//for(int i=1;i<=cnt;i++)  	cout<<ww[i]<<" "; cout<<endl;
+	Part(); 
 	memset(f,0,sizeof(f));
 	for(int i=1;i<=cnt;++i)
 		for(int j=Sum;j>=ww[i];--j){
@@ -355,52 +371,55 @@ Set of tracks (and durations) which are the correct solutions and string ‘sum:
 4 10 12 9 8 2 sum:45
 ```
 ### Idea
+这道题就是0-1背包问题了。背包容量是总时间，物品N件是CD数量。每件CD的时间是物品价值。
+第 i件物品由“前 i-1件物品放入容量为 j 的背包中”和“前 i-1 件物品放入容量为 j-w[i] 的背包之间的价值较大的作为策略。
+中”，
+另外我们需要顺序给出方案，所以需要倒回去遍历一遍f[i][N]的情况，并把选择了的给打印出来，这里我把数字转化成string类型最后放在一起打印。
 
 ### Codes
-```
+```cpp
 #include<iostream> 
+#include<cstdio>
+#include<cmath> 
 #include<cstring>
-using namespace std;
-const int maxn=1010;
-const int MAXN=1e5;
-int N,Sum,cnt;
-int W[maxn], C[maxn];//面额,数量 
-int ww[MAXN],f[MAXN];
-void Part(){
-	cnt=0;
-	for(int i=1;i<=N;++i){
-		int t=C[i];
-		for(int k=1;k<=t;k<<=1){
-			cnt++;
-			ww[cnt]=k*W[i]; 
-			t-=k;
-		}
-		if(t>0){
-			cnt++;
-			ww[cnt]=t*W[i]; 
-		}
-	}
-}
+using namespace std; 
+const int maxn=10005;
+int N,M;string ans;
+int W[22];
+int f[maxn][maxn];bool p[maxn];
 void solve(){
-	if(N==0||Sum==0) { printf("0\n"); return; } 
-	Part();
-	//for(int i=1;i<=cnt;i++)  	cout<<ww[i]<<" "; cout<<endl;
-	memset(f,0,sizeof(f));
-	for(int i=1;i<=cnt;++i)
-		for(int j=Sum;j>=ww[i];--j){
-			f[j]=max(f[j],f[j-ww[i]]+ww[i]);
+	for(int i=0;i<=N;++i)
+		f[0][i]=0;
+	memset(p,false,sizeof(p)); 
+	for(int i=1;i<=M;++i)
+		for(int j=0;j<=N;++j){
+			f[i][j]=f[i-1][j];
+			if(j-W[i]>=0)
+				f[i][j]=max(f[i][j],f[i-1][j-W[i]]+W[i]);
 		}
-	int ans=f[Sum];
-	printf("%d\n",ans);
+	string str;
+	str=to_string(f[M][N]); 
+	ans="sum:"+str;
+	for(int i=M;i>1;--i){ 
+		if(f[i][N]!=f[i-1][N]){
+			str=to_string(W[i]);
+			ans=str+" "+ans;
+			N-=W[i];
+		}
+	} 
+	if(f[1][N]>0){
+	str=to_string(W[1]);
+	ans=str+" "+ans;	
+	} 
+	printf("%s\n",ans.c_str());
 }
 int main(){
-	while(~scanf("%d%d",&Sum,&N)){
-		for(int i=1;i<=N;++i){
-			scanf("%d%d",&C[i],&W[i]);
-		} 
+	while(~scanf("%d",&N)){
+		scanf("%d",&M);
+		for(int i=1;i<=M;++i)
+			scanf("%d",&W[i]);
 		solve();
 	}
-	return 0;
 }
 ```
 
