@@ -24,41 +24,31 @@
  ```
  8
  ``` 
+### Idea
 
-<!-- wp:heading {"level":3} -->
-<h3>Idea</h3>
-<!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":3} -->
-<h3>Codes</h3>
-<!-- /wp:heading -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>#include&lt;iostream>
-#include&lt;cstdio>
+### Codes
+```
+#include<iostream>
+#include<cstdio>
 using namespace std;
 int N,K;
 void solve(){
 	bool ok=false;
 	double all=200.0;int i=0;
-	for(i=1;i&lt;21;++i){ 
+	for(i=1;i<21;++i){ 
 	    if(i>1)   	all=all*(1 + K/100.0); 
-		if(all&lt;=N*i) { ok=true; break; }
+		if(all<=N*i) { ok=true; break; }
 	}
 	if(ok) printf("%d",i);
 	else printf("Impossible");
 }
 int main(){
-	scanf("%d%d",&amp;N,&amp;K); 
+	scanf("%d%d",&N,&K); 
 	solve();
-} </code></pre>
-<!-- /wp:code -->
+} 
+```
 
-<!-- wp:heading -->
 <h2>Problem B-蒜头君列队</h2>
 <!-- /wp:heading -->
 
