@@ -196,7 +196,7 @@ AABBB
 ```
 
 ### Idea
-[ ](./images/ABstring.bmp)
+[ ](images/ABstring.bmp)
 
 ### Codes
 ```
