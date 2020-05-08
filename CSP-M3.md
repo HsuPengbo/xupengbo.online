@@ -21,7 +21,7 @@
 8
 ```
 ### Idea
-
+遇到与前一位字符不一样，段数就要加一
 ### Codes
 ```
 #include<iostream>
@@ -43,7 +43,7 @@ int main(){
 } 
 ```
 
-## Problem A-
+## Problem B- 消消乐大师
 ### Description
 Q老师是个很老实的老师，最近在积极准备考研。Q老师平时只喜欢用Linux系统，所以Q老师的电
 脑上没什么娱乐的游戏，所以Q老师平时除了玩Linux上的赛车游戏SuperTuxKart之外，就是喜欢
@@ -91,7 +91,7 @@ Q老师是个很老实的老师，最近在积极准备考研。Q老师平时只
 2 2 0 0 0
 ```
 ### Idea
-
+横向遍历一遍，纵向遍历一遍，每次遇到重复出现>2个的字符段就都标记一下，show[][]是用来标记是否打印0的。
 ### Codes
 ```
 #include<iostream>
@@ -166,32 +166,6 @@ int main(){
 }
 ```
 
-## Problem B-
-### Description
-
-
-### Input
-
-### Output
-
-### Sample Input
-```
-
-```
-
-### Sample Output
-```
-
-```
-
-### Idea
-
-
-### Codes
-```
-
-```
-
 ## Problem C-咕咕东学英语
 ### Description
 咕咕东很聪明，但他最近不幸被来自宇宙的宇宙射线击中，遭到了降智打击，他的英语水平被归
@@ -239,9 +213,7 @@ void solve(){
 		if(str[i]!=str[i-1]) t[++tot]=i;  
 	}
 	t[++tot]=n; ans=(n-1)*n/2; 
-	for(ll i=0;i<tot-1;++i){ 
-		ans-=(t[i+2]-t[i]);
-	}
+	ans-=(t[tot]+t[tot-1]-t[1]-t[0]);
 	ans+=(tot-1); printf("%lld",ans);
 }
 int main(){
