@@ -197,6 +197,9 @@ AABBB
 
 ### Idea
 <figure class="wp-block-image"><img src="./images/ABstring.bmp" alt="" class="wp-image-320"/></figure>
+
+
+
 ### Codes
 ```
 #include<iostream>
