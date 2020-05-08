@@ -196,7 +196,7 @@ AABBB
 ```
 
 ### Idea
-<figure class="wp-block-image"><img src="./images/ABstring.bmp" alt="" class="wp-image-320"/></figure>
+<figure class="wp-block-image"><img src="https://blog.xupengbo.online/images/ABstring.bmp" alt="" class="wp-image-320"/></figure>
 
 
 
