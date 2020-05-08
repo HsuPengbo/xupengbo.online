@@ -196,7 +196,7 @@ AABBB
 ```
 
 ### Idea
-[](https://www.xupengbo.cn/wp-content/uploads/2020/05/ABstring.bmp)
+[ ](./images/ABstring.bmp)
 
 ### Codes
 ```
