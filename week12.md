@@ -1,4 +1,4 @@
-
+# 程序设计思维与实践 第十二周 &nbsp; [返回首页](./index.md)  [上篇Week11](./week11.md)
 ## Problem A - 必做题 - 1
 ### Description
 给出n个数，zjm想找出出现至少(n+1)/2次的数， 现在需要你帮忙找出这个数是多少？
@@ -223,29 +223,31 @@ int main(){
 则可以发现状态转移规律:    
 dp[i][j]=max { dp[i][j-1], max(dp[i-1][k],1<= k <= j-1) }+A[j]    
 dp[i][j-1]+A[j]：前面j-1个数分成i组的最大值，把第j个宿舍放到最后一组中     
-dp[i-1][k]+A[j]：第j个宿舍单独放一组，前k个宿舍组成i-1组(前i-1组得最大值在每一轮都需要求一下保存下来，以便于后面使用)
+dp[i-1][k]+A[j]：第j个宿舍单独放一组，前k个宿舍组成i-1组(前i-1组得最大值在每一轮都需要求一下保存下来，以便于后面使用)     
+由于n可以取到1e6,所以需要转化一下，弄成一维的，sum[]数组储存dp[i-1][k]的最大值
 ### Codes
 ```cpp
 #include<iostream>
 #include<algorithm>
+#include<cstring>
 #include<cstdio>
 using namespace std;
 const int maxn=1000005;
 const int inf=-1e9;
-int m,n,ans;
+int m,n,tmp;
 int A[maxn],sum[maxn],dp[maxn];
 void solve(){
 	memset(sum,0,sizeof(sum));
 	memset(dp,0,sizeof(dp));
 	for(int i=1;i<=m;++i){
-		ans=inf; 
+		tmp=inf; 
 		for(int j=1;j<=n;++j){
 		  dp[i-1]=inf;
-		  dp[j]=max(dp[j-1]+A[j],sum[j-1]+A[j]); sum[j-1]=ans;
-		  ans=max(dp[j],ans);	 
+		  dp[j]=max(dp[j-1]+A[j],sum[j-1]+A[j]); sum[j-1]=tmp;
+		  tmp=max(dp[j],tmp);	 
 		} 
 	}
-	printf("%d\n",ans);
+	printf("%d\n",tmp);
 }
 int main(){ 
 	while(~scanf("%d%d",&m,&n)){
@@ -255,4 +257,4 @@ int main(){
 	return 0;
 }
 ```
-
+# 结束! &nbsp; [返回首页](./index.md)
