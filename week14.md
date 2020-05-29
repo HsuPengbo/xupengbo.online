@@ -1,5 +1,5 @@
 # 程序设计思维与实践 第十四周 限时模拟    [返回首页](./index.md)        [上篇Week12](./week12.md)
-## Problem Cat (HDU-3700)
+## Problem Cat [HDU-3700](http://acm.hdu.edu.cn/showproblem.php?pid=3700)
 ## Description
 There is a cat, cat likes to sleep.
 If he sleeps, he sleeps continuously no less than A hours.
