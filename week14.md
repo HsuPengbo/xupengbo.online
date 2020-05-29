@@ -1,5 +1,6 @@
 # 程序设计思维与实践 第十四周 限时模拟    [返回首页](./index.md)        [上篇Week12](./week12.md)
-## Problem Description
+## Problem Cat (HDU-3700)
+## Description
 There is a cat, cat likes to sleep.
 If he sleeps, he sleeps continuously no less than A hours.
 For some strange reason, the cat can not stay awake continuously more than B hours.
