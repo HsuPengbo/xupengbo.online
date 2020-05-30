@@ -54,21 +54,26 @@ No
 
 ## Idea
 分析题意,每天的时间段不是睡觉,就是活动.睡觉时间段有下限,活动时间段有上限。由于给定的时间段必须是醒着的,所以我们可以判断,睡觉的时间段必然分布在醒着的时间段之间的区域。```(输入时如果出现了时间段Wakes[i].R>Wakes[i].L,记得Wakes[i].R+=T)```
-由于每天是一个循环,所以当我们将一天必须活动时间段排序后,可以在当天最晚活动时间段$Wakes[N-1]$后面再加上一个时间段$Wakes[N]$,有$Wakes[N]=Wakes[0]+24h$。这样就解决了跨夜问题。
+由于每天是一个循环,所以当我们将一天必须活动时间段排序后,可以在当天最晚活动时间段Wakes[N-1]后面再加上一个时间段Wakes[N],有Wakes[N]=Wakes[0]+24h。这样就解决了跨夜问题。
 从第一个空闲区间开始循环,如果满足>=A,就加入睡觉的时间段数组。
 在睡觉数组后面加上第一个睡觉段(数组大小不用变化)，然后从第一个睡觉数组的末端开始检验每个相隔区间是否都<=B满足活动条件。最后根据之前的标记判断是否存在，存在输出Yes和Sleeps数组。
 过程如下:
+
+```flow
+st=>start: Input
+op1=>operation: Wakes[0]  Wakes[1] ... Wakes[N-1]    (Wakes[N]=Wakes[0]+24h)
+op2=>operation:检验Wakes[i].R~Wakes[i+1].L是否>=A
+op3=>operation:Sleeps[0] Sleeps[1] ... Sleeps[tot-1] (Sleeps[tot]=Sleeps[0]+24h)
+op4=>operation:检验Sleeps[i].R ~ Sleeps[i+1].L 是否<=B 
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>Output
+
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
 ```
-Wakes[0]     Wakes[1]     ...   Wakes[N-1]   (Wakes[N]=Wakes[0]+24h)
-                          ↓
-检验Wakes[i].R~Wakes[i+1].L是否>=A
-                          ↓
-Sleeps[0]    Sleep[1]     ...   Sleeps[tot-1]  (Sleeps[tot]=Sleeps[0]+24h)
-                          ↓
-检验Sleeps[i].R ~ Sleeps[i+1].L 是否<=B                  
-                          ↓ 
-                        Output
-```
+
 ## Codes
 ```cpp
 #include<cstdio>
