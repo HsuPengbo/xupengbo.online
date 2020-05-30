@@ -59,19 +59,13 @@ No
 在睡觉数组后面加上第一个睡觉段(数组大小不用变化)，然后从第一个睡觉数组的末端开始检验每个相隔区间是否都<=B满足活动条件。最后根据之前的标记判断是否存在，存在输出Yes和Sleeps数组。
 过程如下:
 
-```flow
-st=>start: Input
-op1=>operation: Wakes[0]  Wakes[1] ... Wakes[N-1]    (Wakes[N]=Wakes[0]+24h)
-op2=>operation:检验Wakes[i].R~Wakes[i+1].L是否>=A
-op3=>operation:Sleeps[0] Sleeps[1] ... Sleeps[tot-1] (Sleeps[tot]=Sleeps[0]+24h)
-op4=>operation:检验Sleeps[i].R ~ Sleeps[i+1].L 是否<=B 
-cond=>condition: Yes or No?
-sub=>subroutine: Your Subroutine
-e=>Output
-
-st->io->op->cond
-cond(yes)->e
-cond(no)->sub->io
+```
+Input
+Wakes[0]  Wakes[1] ... Wakes[N-1]    (Wakes[N]=Wakes[0]+24h)
+检验Wakes[i].R~Wakes[i+1].L是否>=A
+Sleeps[0] Sleeps[1] ... Sleeps[tot-1] (Sleeps[tot]=Sleeps[0]+24h)
+检验Sleeps[i].R ~ Sleeps[i+1].L 是否<=B 
+Output
 ```
 
 ## Codes
