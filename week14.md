@@ -31,7 +31,7 @@ For each case, output f(k) % m in one line.
 ```
 ## Idea
 这道题属于矩阵快速幂的简单应用。题目给定的线性递推式很长，但是并不难，当 x ≥ 10 时，f(x) = a0 * f(x-1) + a1 * f(x-2) + a2 * f(x-3) + …… + a9 * f(x-10)。 
-!(https://blog.xupengbo.online/images/矩阵表达式.png?raw=true)
+![](https://blog.xupengbo.online/images/矩阵表达式.png?raw=true)
 ## Codes
 ```
 #include<cstdio>
