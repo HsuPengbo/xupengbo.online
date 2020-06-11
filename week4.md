@@ -1,4 +1,4 @@
-#  第四周习题          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)&nbsp;&nbsp;  [上篇 CSP-M1](./CSP-M1.md)
+#  第四周习题          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)&nbsp;&nbsp;  [上篇 Week3](./week3.md)
 ## Problem A - DDL 的恐惧
 ### Description
 ZJM 有 n 个作业，每个作业都有自己的 DDL，如果 ZJM 没有在 DDL 前做完这个作业，那么老师会扣掉这个作业的全部平时分。所以 ZJM 想知道如何安排做作业的顺序，才能尽可能少扣一点分。请你帮帮他吧！
