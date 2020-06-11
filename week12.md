@@ -1,4 +1,4 @@
-# 程序设计思维与实践 第十二周 &nbsp; [返回首页](./index.md)  [上篇CSP-M3](./CSP-M3.md)
+# 程序设计思维与实践 第十二周 &nbsp; [返回首页](./index.md)  [上篇Week11](./week11.md)
 ## Problem A - 必做题 - 1
 ### Description
 给出n个数，zjm想找出出现至少(n+1)/2次的数， 现在需要你帮忙找出这个数是多少？
@@ -258,4 +258,4 @@ int main(){
 	return 0;
 }
 ```
-# 结束! &nbsp; [返回首页](./index.md) [下篇Week14](./week14.md)
+# 结束! &nbsp; [返回首页](./index.md) [下篇Week13](./week13.md)
