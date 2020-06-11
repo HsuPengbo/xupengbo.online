@@ -162,7 +162,7 @@ int gcd(int a,int b){return b == 0 ? a : gcd(b,a%b);}
 ### Input
 输入第一行一个t，表示数据组数。
 对于每组数据，第一行输入一个n，表示数的个数
-接下来一行有n个数$a_i$，输入保证是升序的。
+接下来一行有n个数ai，输入保证是升序的。
 ### Output
 每组数据输出一行，如果能够造出来满足题目描述的树，输出Yes，否则输出No。
 无行末空格。
@@ -195,18 +195,14 @@ Yes
 ### Note
 ![](https://blog.xupengbo.online/images/csp-m4-3.PNG?raw=true)
 ### Idea
-由于输入的序列Node[  ]为升序序列,所以假如存在满足条件的二叉树时,
-必然有根节点Node[root]满足:
+由于输入的序列Node[  ]为升序序列,所以假如存在满足条件的二叉树时,必然有根节点Node[p]满足:Node[1,p-1]为Node[p]左子树,Node[p+1,n]为p右子树。
+设置数字Root[i][j]表示区间[i,j]的根情况,如果=true，说明点i到j之间存在一个根p(i<=p<=j)使其为二叉树,如果=0说明不存在根节点使其形成一个二叉树。
 
- Node[1,root-1]为Node[root]左子树,Node[root+1,n]为root右子树
-而对于Node[root]的左子节点L[root],
+我们再设置L[l][p],R[p][r]分别表示l为p的左子节点,r为p的右子节点.
+如果L[l][p]=true，必须满足l<=p,且l和p之间能连接，R[p][r]必须满足p<=r且p和r之间也能连接。
+满足连接的条件就是题目给定的两点的数之间最大公约数>1，当然点i与其本身就能连接，此时即其左或者右子节点为空。
 
-又有Node[1,L[root]-1]为其左子树,Node[L[root]+1,root-1]为其右子树
-右子节点同理。
-
-Root[i][j]表示区间[i,j]的根情况,如果>0 值就是其根序号,如果=0说明不存在根，不存在一个二叉树.
-状态转移:
-![](https://blog.xupengbo.online/images/csp-m4-5.PNG?raw=true)
+如果对于L[l][p]==true&& R[p][r]==true,说明从l到r存在一个根节点让其成为一个二叉树,则令Root[l][r]=true。
 
 ### Codes
 ```cpp
