@@ -1,5 +1,94 @@
 # 程序设计思维与实践 第14周 作业+限时模拟    [返回首页](./index.md)        [上篇 元素选择器](./CSP-201809-3.md)
+# 作业第3题 Q老师的考验(选做题未做)
+## Description
+Lele now is thinking about a simple function f(x).
 
+If x < 10 f(x) = x.
+If x >= 10 f(x) = a0 * f(x-1) + a1 * f(x-2) + a2 * f(x-3) + …… + a9 * f(x-10);
+And ai(0<=i<=9) can only be 0 or 1 .
+
+Now, I will give a0 ~ a9 and two positive integers k and m ,and could you help Lele to caculate f(k)%m.
+## Input
+The problem contains mutiple test cases.Please process to the end of file.
+In each case, there will be two lines.
+In the first line , there are two positive integers k and m. ( k<2*10^9 , m < 10^5 )
+In the second line , there are ten integers represent a0 ~ a9.
+## Output
+For each case, output f(k) % m in one line.
+## Sample Input
+10 9999
+1 1 1 1 1 1 1 1 1 1
+20 500
+1 0 1 0 1 0 1 0 1 0
+## Sample Output
+45
+104
+## Idea
+
+## Codes
+```
+#include<cstdio>
+#include<cstring>
+int a[10],k,m,ans;
+const int N=10;
+struct Matrix{
+	int x[N][N];
+	Matrix operator*(const Matrix& t) const {
+		Matrix ret;
+		for(int i=0;i<N;++i){
+			for(int j=0;j<N;++j){
+				ret.x[i][j]=0;
+				for(int k=0;k<N;++k){
+					ret.x[i][j] += x[i][k]*t.x[k][j];
+					ret.x[i][j] %=m;
+				}
+			}
+		}
+		return ret;
+	}
+	void Init(){ memset(x,0,sizeof(x)); }
+	Matrix(){ memset(x,0,sizeof(x)); }
+	Matrix(const Matrix& t) { memcpy(x,t.x,sizeof(x)); }
+};
+Matrix quick_pow(Matrix t,int x){
+	Matrix ret;
+	ret.Init();
+	for(int i=0;i<N;++i)
+		ret.x[i][i]=1;
+	while(x){
+		if(x&1) ret=ret*t;
+		t=t*t;
+		x>>=1;
+	}
+	return ret;
+}
+void solve(){
+	if(k<10) {
+	printf("%d\n",k%m);	return;
+	}
+	Matrix t;
+	for(int i=0;i<N;++i) 
+		t.x[0][i]=a[i]; 
+	for(int i=1;i<N;++i) 
+		t.x[i][i-1]=1;
+	Matrix z=quick_pow(t,k-9);
+	int ans=0;
+	for(int i=0;i<N;++i){
+		ans+= z.x[0][i]*(9-i);ans%=m;
+	}
+	printf("%d\n",ans);
+}
+int main(){
+	while(~scanf("%d%d",&k,&m)){
+		for(int i=0;i<10;++i) scanf("%d",&a[i]);
+		solve();
+	}
+	return 0;
+}
+```	     
+
+
+# 限时模拟
 ## Problem Cat [HDU-3700](http://acm.hdu.edu.cn/showproblem.php?pid=3700)
 ## Description
 There is a cat, cat likes to sleep.
