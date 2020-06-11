@@ -9,20 +9,26 @@ And ai(0<=i<=9) can only be 0 or 1 .
 
 Now, I will give a0 ~ a9 and two positive integers k and m ,and could you help Lele to caculate f(k)%m.
 ## Input
+
 The problem contains mutiple test cases.Please process to the end of file.
 In each case, there will be two lines.
 In the first line , there are two positive integers k and m. ( k<2*10^9 , m < 10^5 )
 In the second line , there are ten integers represent a0 ~ a9.
 ## Output
+
 For each case, output f(k) % m in one line.
 ## Sample Input
+```
 10 9999
 1 1 1 1 1 1 1 1 1 1
 20 500
 1 0 1 0 1 0 1 0 1 0
+```
 ## Sample Output
+```
 45
 104
+```
 ## Idea
 
 ## Codes
@@ -85,7 +91,7 @@ int main(){
 	}
 	return 0;
 }
-```	     
+```
 
 
 # 限时模拟
@@ -123,7 +129,8 @@ If the cat can not organize their day desired way, print to the output file No.
  
 
 ## Sample Input
-```cpp
+
+```
 12 12
 1
 23:00-01:00
@@ -132,10 +139,11 @@ If the cat can not organize their day desired way, print to the output file No.
 07:00-08:00
 11:00-11:09
 19:00-19:59
- ```
+```
 
 ## Sample Output
-```cpp
+
+```
 Yes
 1
 01:07-22:13
@@ -159,7 +167,8 @@ Output
 ```
 
 ## Codes
-```cpp
+
+```
 #include<cstdio>
 #include<iostream>
 #include<algorithm>
@@ -217,4 +226,5 @@ int main() {
 	return 0;
 }
 ```
+				    
 # 结束!       [返回首页](./index.md)        [下篇Week15](./week15.md)
