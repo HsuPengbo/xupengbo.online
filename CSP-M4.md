@@ -24,12 +24,7 @@ TT来到一个小湖边，看到了许多在湖边嬉戏的鸭子，TT顿生羡�
 4
 ```
 ### Note
-| 数据点 | n  | k  |  $a_i$ |
-|--|--|--|--|
-| 1 | n<=1000  | k=10 | $10^6$ |
-| 2 | n<=1000  | k=1 | $10^6$ |
-| 3,4,5 |  n<=$10^5$ | k=100 | $10^9$ |
-| 6,7,8,9,10 | n<=$10^6$  | k=$10^6$ | $10^{15}$ |
+
 ### Idea
 
 ### Codes
@@ -95,10 +90,8 @@ int main(){
 1.00
 ```
 ### Note
-| 数据点 | n  | x  |  y |
-|--|--|--|--| 
-|1~5| n<=100|  \|x\|<=10000 |\|y\|<=10000|
-|6~10| n<=1000|  \|x\|<=100000 |\|y\|<=100000|
+
+
 ### Idea
 
 ### Codes
@@ -196,23 +189,20 @@ Yes
 ```
 ### Sample Explain
 样例1可构造如下图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200605104319478.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzMzE1Mw==,size_16,color_FFFFFF,t_70)
+
 ### Note
-| 数据点 | t  | n  |  $a_i$ |
-|--|--|--|--| 
-|1,2,3| 5|  15 |$10^9$ |
-|4,5,6| 5|  35|$10^9$ |
-| 7,8,9,10 | 5 | 700 |  $10^9$ |
+
 ### Idea
-由于输入的序列$Node[  ]$为升序序列,所以假如存在满足条件的二叉树时,
-必然有根节点$Node[root]$满足:
- $Node[1,root-1]$为$Node[root]$左子树,$Node[root+1,n]$为$root$右子树
-而对于$Node[root]$的左子节点$L[root]$,
-又有$Node[1,L[root]-1]$为其左子树,$Node[L[root]+1,root-1]$为其右子树
+由于输入的序列Node[  ]为升序序列,所以假如存在满足条件的二叉树时,
+必然有根节点Node[root]满足:
+ Node[1,root-1]为Node[root]左子树,Node[root+1,n]为root右子树
+而对于Node[root]的左子节点L[root],
+又有Node[1,L[root]-1]为其左子树,Node[L[root]+1,root-1]为其右子树
 右子节点同理。
 Root[i][j]表示区间[i,j]的根情况,如果>0 值就是其根序号,如果=0说明不存在根，不存在一个二叉树.
 状态转移:
-$L[i][k]=\{ 存在i<=p<=k,使 L[i][p] ∩  R[p][k-1]∩ gcd(p,k)>1 时=1,否则=0  \}$
+$$L[i][k]=\{ 存在i<=p<=k,使 L[i][p] ∩  R[p][k-1]∩ gcd(p,k)>1 时=1,否则=0  \}$$
+
 ### Codes
 ```cpp
 #include<cstdio>
