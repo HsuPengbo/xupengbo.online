@@ -96,6 +96,7 @@ int main(){
 ![](https://blog.xupengbo.online/images/csp-m4-2.PNG?raw=true)
 
 ### Idea
+当时想复杂了，其实这个题直接把每个都做圆心，然后遍历其他的点来生成最大半径，找到这些最大值的最小的即可，
 
 ### Codes
 ```cpp
