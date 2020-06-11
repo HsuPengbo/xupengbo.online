@@ -1,4 +1,4 @@
-#  CSP-M1 习题    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)&nbsp;&nbsp;  [上篇 week3](./week3.md)
+#  CSP-M1 习题    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)&nbsp;&nbsp;  [上篇 week4](./week4.md)
 ## Problem A - 咕咕东的奇遇
 ### Description
 咕咕东是个贪玩的孩子，有一天，他从上古遗迹中得到了一个神奇的圆环。这个圆环由字母表组成首尾相接的环，环上有一个指针，最初指向字母a。咕咕东每次可以顺时针或者逆时针旋转一格。例如，a顺时针旋转到z，逆时针旋转到b。咕咕东手里有一个字符串，但是他太笨了，所以他来请求你的帮助，问最少需要转多少次。 
