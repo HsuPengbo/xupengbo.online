@@ -1,8 +1,12 @@
 # 程序设计思维与实践 第15周作业    [返回首页](./index.md)   [上篇 Week14](./week14.md)
 
 ## Porblem-魔咒词典
-Time Limit: 8000/5000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
-Total Submission(s): 20863    Accepted Submission(s): 4872
+| | |
+|--|--|
+| Time Limit | 8000/5000 MS (Java/Others) | 
+| Memory Limit | 32768/32768 K (Java/Others) | 
+| Total Submission(s) | 20863 |
+| Accepted Submission(s) | 4872 |
 
 
 ### Problem Description
