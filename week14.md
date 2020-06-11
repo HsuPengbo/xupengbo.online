@@ -35,7 +35,7 @@ For each case, output f(k) % m in one line.
 ![](https://blog.xupengbo.online/images/2020061101.png?raw=true)
 
 ## Codes
-```
+```cpp
 #include<cstdio>
 #include<cstring>
 int a[10],k,m,ans;
@@ -171,7 +171,7 @@ Output
 
 ## Codes
 
-```
+```cpp
 #include<cstdio>
 #include<iostream>
 #include<algorithm>
