@@ -24,6 +24,7 @@ TT来到一个小湖边，看到了许多在湖边嬉戏的鸭子，TT顿生羡�
 4
 ```
 ### Note
+![](https://blog.xupengbo.online/images/csp-m4-1.png?raw=true)
 
 ### Idea
 
@@ -91,6 +92,7 @@ int main(){
 ```
 ### Note
 
+![](https://blog.xupengbo.online/images/csp-m4-2.png?raw=true)
 
 ### Idea
 
@@ -189,9 +191,9 @@ Yes
 ```
 ### Sample Explain
 样例1可构造如下图
-
+![](https://blog.xupengbo.online/images/csp-m4-4.png?raw=true)
 ### Note
-
+![](https://blog.xupengbo.online/images/csp-m4-3.png?raw=true)
 ### Idea
 由于输入的序列Node[  ]为升序序列,所以假如存在满足条件的二叉树时,
 必然有根节点Node[root]满足:
@@ -201,7 +203,7 @@ Yes
 右子节点同理。
 Root[i][j]表示区间[i,j]的根情况,如果>0 值就是其根序号,如果=0说明不存在根，不存在一个二叉树.
 状态转移:
-$$L[i][k]=\{ 存在i<=p<=k,使 L[i][p] ∩  R[p][k-1]∩ gcd(p,k)>1 时=1,否则=0  \}$$
+![](https://blog.xupengbo.online/images/csp-m4-5.png?raw=true)
 
 ### Codes
 ```cpp
