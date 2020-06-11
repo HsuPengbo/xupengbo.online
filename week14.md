@@ -56,7 +56,7 @@ struct Matrix{
 	void Init(){ memset(x,0,sizeof(x)); }
 	Matrix(){ memset(x,0,sizeof(x)); }
 	Matrix(const Matrix& t) { memcpy(x,t.x,sizeof(x)); }
-};
+}; 
 Matrix quick_pow(Matrix t,int x){
 	Matrix ret;
 	ret.Init();
