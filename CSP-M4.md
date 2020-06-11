@@ -197,10 +197,13 @@ Yes
 ### Idea
 由于输入的序列Node[  ]为升序序列,所以假如存在满足条件的二叉树时,
 必然有根节点Node[root]满足:
+
  Node[1,root-1]为Node[root]左子树,Node[root+1,n]为root右子树
 而对于Node[root]的左子节点L[root],
+
 又有Node[1,L[root]-1]为其左子树,Node[L[root]+1,root-1]为其右子树
 右子节点同理。
+
 Root[i][j]表示区间[i,j]的根情况,如果>0 值就是其根序号,如果=0说明不存在根，不存在一个二叉树.
 状态转移:
 ![](https://blog.xupengbo.online/images/csp-m4-5.PNG?raw=true)
