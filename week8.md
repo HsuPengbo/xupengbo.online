@@ -1,4 +1,4 @@
-# 程序设计思维与实践 第八周      &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 路径解析](./csp201604-3.md)
+# 程序设计思维与实践 第八周      &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 路径解析](./CSP-201604-3.md)
 ##   Problem A - 区间选点 II  
 <!-- /wp:heading -->
 
