@@ -58,7 +58,7 @@
       主机``host`` +  子网``subnet``/通信子网``communication subnet``  
       子网: 传输线路``transmission line``+ 交换元素``switching element``/交换机``switch``(俗称路由器``router``)  
       子网含义:  
-         最初☞一组路由器和通信线路的集合 
+         最初☞一组路由器和通信线路的集合   
          后来☞ 
   
   
