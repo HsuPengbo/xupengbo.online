@@ -22,7 +22,8 @@
   + **[包]** ``packet`` 消息的相关信息。 
   
 ## 相关的技术设计
-  + **[广义上普遍使用的传输技术]**
+
+   + **[广义上普遍使用的传输技术]**
      1. 广播式链路
      
         广播网络中,通信信道被网络上所有机器所共享,任何一台机器发出的数据包可以被其他所有机器收到。
@@ -35,13 +36,13 @@
         点-点传输只有一个发送方和传输方,数据包从源端到达接收方,必须访问一个或多个中间机器,找到一条好的路由对[点对点网络]非常重要。
         有时候也叫单播``unicasting``
 
-  + **[个域网]**``PAN,Personal Area Network``
+   + **[个域网]**``PAN,Personal Area Network``
     
       允许设备围绕一个人通信   
       一种无线网络技术[蓝牙]   
       另一种短程通信技术[RFID]   
 
-  + **[局域网]**``LAN,Local Area Network``
+   + **[局域网]**``LAN,Local Area Network``
   
       一种私有网络。  
       当用于一个公司内部时,就称为企业网络。  
@@ -52,10 +53,10 @@
       有限局域网的拓扑结构是以点到点链路为基础的,它的一种常见的标准[IEEE 802.3](https://en.wikipedia.org/wiki/IEEE_802.3)(俗称以太网)  
       
       
-  + **[城域网]**``MAN,Metropolitan Area Network``
+   + **[城域网]**``MAN,Metropolitan Area Network``
       一种标准[IEEE 802.16](https://en.wikipedia.org/wiki/IEEE_802.16)(俗称WiMAX)
   
-  + **[广域网]**``WAN,Wide Area Network`` 
+   + **[广域网]**``WAN,Wide Area Network`` 
   
       [主机``host``] +  [子网``subnet``/通信子网``communication subnet``]  
       [子网]: [传输线路``transmission line``]+ [交换元素``switching element``/交换机``switch``(俗称路由器``router``)]  
@@ -74,7 +75,7 @@
       | 拥有和经营  | 同一用户进行  | 不同用户  | 
       | 路由器连接的可能的网络技术  |  以太网 |  SONET链路 | 
       | 子网连接  |  连接单个计算机 |  可以连接整个局域网 | 
-  + **[层次设计问题]**
+   + **[层次设计问题]**
      + 通信可靠  
       
        + 检错``error detection`` & 纠错机制``error correction`` 从接收到的信息中发现错误甚至纠正错误的机制。  
@@ -101,7 +102,7 @@
        + 完整性 防止消息发生异常变化。  
       
       
- + **[面向连接与无连接服务]**
+  + **[面向连接与无连接服务]**
  
       面向连接服务按照电话系统建模,先建立连接,然后传输数据,最后释放连接。
       
@@ -119,7 +120,7 @@
       | 请求-应答 | 数据库查询 |  
      
      
- + **[服务原语]**
+  + **[服务原语]**
     一个服务由一组原语``primitive``正式说明。  
     
     如果协议栈在操作系统中,服务原语就是一些系统调用。
@@ -133,16 +134,16 @@
       + RECEIVE:阻塞操作,等待入境报文 
       + SEND:给对等实体发送一个报文  
       + DISCONNECT:终止一个连接
-```
+  ```
     第k+1层                               第k+1层
       ↑↓ (第k层提供的服务)                   ↑↓
     第k层←-------------协议------------- -→第k层
       ↑↓                                    ↑↓
     第k-1层                               第k-1层
-```  
-+ **[OSI参考模型]**
+  ```  
+ + **[OSI参考模型]**
 
-![](https://blog.xupengbo.online/images/OSI-Model1_Done.jpg?raw=true)
+ ![](https://blog.xupengbo.online/images/OSI-Model1_Done.jpg?raw=true)
 
 
 
