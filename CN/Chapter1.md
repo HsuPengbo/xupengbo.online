@@ -140,5 +140,10 @@
       ↑↓                                    ↑↓
     第k-1层                               第k-1层
 ```  
++ **[OSI参考模型]**
+
+![](../images/OSI-Model1_Done.jpg?raw=true)
+
+
 
 # 结束 [返回首页](../index.md) [返回目录](./day1.md) [物理层](./Chapter2.md)
