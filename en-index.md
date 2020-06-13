@@ -6,7 +6,7 @@
   | Xu Pengbo | Zhengzhou | Shandong University | Artificial Intelligence|
 
 ## blog    
-  ### Program design thinking and practice(CSP) 
+### Program design thinking and practice(CSP) 
     
    | | | | | | 
    |---|---|---|---|---| 
@@ -17,6 +17,6 @@
    |[Week14](./week14.md) |[Week15](./week15.md)  | | | | 
 
 
-   ### Review of Coumputer Networks
+### Review of Coumputer Networks
    
    [Outline](./CN/day1.md)
