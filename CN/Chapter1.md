@@ -59,7 +59,11 @@
       [子网]: [传输线路``transmission line``]+ [交换元素``switching element``/交换机``switch``(俗称路由器``router``)]  
       [子网]含义:  
          最初☞一组路由器和通信线路的集合   
-         后来☞ 
+         后来☞  
+      广域网类型:
+          1. 直接连接到Internet,利用VPN进行连接
+          2. 通过ISP网络享受Internet服务
+          
   [局域网][广域网]区别:
   
   | 角度 | 局域网 | 广域网 | 
