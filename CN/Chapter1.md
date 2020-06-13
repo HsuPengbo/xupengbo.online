@@ -142,7 +142,7 @@
 ```  
 + **[OSI参考模型]**
 
-![](../images/OSI-Model1_Done.jpg?raw=true)
+![](https://blog.xupengbo.online/images/OSI-Model1_Done.jpg?raw=true)
 
 
 
