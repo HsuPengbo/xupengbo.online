@@ -1,9 +1,9 @@
 [**中文**](./index.md) 
 ## Personal  profile
 
-  |  name |  city |College| major |
-  |-------|-------|-------|-------|
-  | Xu Pengbo | Zhengzhou | Shandong University | Artificial Intelligence|
+  |  name | major |
+  |-------|-------|
+  | Xu Pengbo | Artificial Intelligence|
 
 ## blog    
 ### Program design thinking and practice(CSP) 
