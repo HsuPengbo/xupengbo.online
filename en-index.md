@@ -18,6 +18,6 @@
 
 
 ### Others 
-[将用QT写的C++程序打包成EXE文件](./Others/)
+[将用QT写的C++程序打包成EXE文件](./Others/2020-9-26.md)
    
    [Outline](./CN/day1.md)
