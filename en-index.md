@@ -17,6 +17,7 @@
    |[Week14](./week14.md) |[Week15](./week15.md)  | | | | 
 
 
-### Review of Coumputer Networks
+### Others 
+[将用QT写的C++程序打包成EXE文件](./Others/)
    
    [Outline](./CN/day1.md)
