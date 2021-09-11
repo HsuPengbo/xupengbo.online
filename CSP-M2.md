@@ -1,4 +1,4 @@
-# 程序设计思维与实践 CSP-M2       &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 Week7](./week7.md)
+# 程序设计思维与实践 CSP-M2       &nbsp;    [返回首页](./index.html)&nbsp;  [上篇 Week7](./week7.md)
 ## Problem  A- HRZ的序列  
 <!-- /wp:heading -->
 
@@ -463,4 +463,4 @@ int main(){
 	return 0;
 }</code></pre>
 <!-- /wp:code -->
-# 结束      &nbsp;    [返回首页](./index.md)&nbsp;  [下篇 路径解析](./CSP-201604-3.md)
+# 结束      &nbsp;    [返回首页](./index.html)&nbsp;  [下篇 路径解析](./CSP-201604-3.md)
