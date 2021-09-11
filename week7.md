@@ -1,4 +1,4 @@
-# 程序设计思维与实践 第七周        &nbsp;    [返回首页](./index.md)&nbsp;  [上篇 Week6](./week6.md)
+# 程序设计思维与实践 第七周        &nbsp;    [返回首页](./index.html)&nbsp;  [上篇 Week6](./week6.md)
 <!-- wp:heading -->
 <h2>  Problem  A - TT 的魔法猫 </h2>
 <!-- /wp:heading -->
@@ -555,4 +555,4 @@ int main(){
     return 0;
 }</code></pre>
 <!-- /wp:code -->
-# 结束       &nbsp;    [返回首页](./index.md)&nbsp;  [下篇 CSP-M2](./CSP-M2.md)
+# 结束       &nbsp;    [返回首页](./index.html)&nbsp;  [下篇 CSP-M2](./CSP-M2.md)
