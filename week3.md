@@ -1,4 +1,4 @@
-#  第三周 习题          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md)&nbsp;&nbsp;  [上篇 week2](./week2.md)
+#  第三周 习题          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.html)&nbsp;&nbsp;  [上篇 week2](./week2.md)
 ## Problem A - 选数问题
 ####   Description
 Given n positive numbers, ZJM can select exactly K of them that sums to S. Now ZJM wonders how many ways to get it!
@@ -227,4 +227,4 @@ int main(){
 	return 0;
 } 
 ```
-# 结束！ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.md) &nbsp;&nbsp;  [下篇 CSP-M1](./CSP-M1.md)
+# 结束！ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       [返回首页](./index.html) &nbsp;&nbsp;  [下篇 CSP-M1](./CSP-M1.md)
