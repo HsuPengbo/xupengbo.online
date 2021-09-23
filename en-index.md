@@ -26,5 +26,5 @@
 
 
 
-[鲁ICP备19057329号-1](https://beian.miit.gov.cn) @Hsupengbo 2021
+**@hsupengbo 2021**
 
